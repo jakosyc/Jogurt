@@ -1,0 +1,183 @@
+/* Allgemeines Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(0, 0, 255); /* RGB für den gesamten Hintergrund */
+    color: white;
+}
+
+header {
+    text-align: center;
+    padding: 50px 20px;
+    display: flex; /* Flexbox, um Bild und Titel nebeneinander zu platzieren */
+    align-items: center; /* Vertikale Ausrichtung des Inhalts */
+    justify-content: center;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+}
+
+.title-image {
+    width: 100px; /* Größe des kleinen Bildes */
+    height: 100px;
+    margin-right: 20px; /* Abstand zwischen Bild und Titel */
+}
+
+
+header h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: white; /* Gelbe Schrift */
+    text-shadow: 
+        2px 2px 0px black, 
+        0 0 10px black, 
+        0 0 20px black; /* Starker verschwommener Effekt */
+    filter: blur(1px); /* Teletext-ähnlicher Verschwommeneffekt */
+    letter-spacing: 2px; /* Verpixelter Look */
+    position: relative;
+    padding: 10px 40px;
+    display: inline-block;
+}
+
+.oval-title {
+    border: 5px solid black; /* Schwarzes Oval */
+    border-radius: 50%; /* Ovalform */
+    display: inline-block;
+    padding: 30px 50px;
+    text-align: center;
+}
+
+/* Main-Bereich */
+main {
+    text-align: center;
+    padding: 0px;
+}
+
+#editable-list {
+    list-style: none;
+    padding: 0;
+    margin: 20px auto;
+    max-width: 600px;
+}
+
+#editable-list li {
+    font-size: 1.8rem;
+    font-weight: bold; /* Arial Bold */
+    color: white; /* Weiße Schrift */
+    margin: 25px 0;
+    position: relative;
+    text-align: center; /* Zentrierte Liste */
+    text-shadow: 3px 3px 5px black; /* Schwarzer Schatten */
+}
+
+#editable-list li::before {
+    content: "★"; /* Stern-Symbol */
+    color: red; 
+    font-size: 1.5rem;
+    display: block;
+    margin-bottom: 10px; /* Abstand zwischen Stern und Text */
+}
+
+.line-main {
+    font-size: 1.8rem;
+    font-weight: bold;
+    display: block;
+}
+
+.line-sub {
+    font-size: 1.6rem;
+    font-weight: bold;
+    display: block;
+    margin-top: 5px;
+}
+
+.line-small {
+    font-size: 1rem;
+    font-weight: normal;
+    display: block;
+    margin-top: 3px;
+    color: #ccc; /* Leicht grauer Text */
+}
+
+/* Untertitel */
+.sub-title {
+    font-size:1rem;
+    font-weight: bold;
+    color: blue; /* Gelbe Schrift */
+    text-shadow: 
+        2px 2px 0px black, 
+        0 0 10px black, 
+        0 0 20px black; /* Starker verschwommener Effekt */
+    filter: blur(1px); /* Teletext-ähnlicher Verschwommeneffekt */
+    letter-spacing: 2px; /* Verpixelter Look */
+    text-align: center;
+    margin-top: 80px; /* Vierfacher Abstand */
+
+    border: 5px solid black; /* Schwarzer Rahmen */
+    border-radius: 10px; /* Optionale Abrundung der Ecken */
+    padding: 20px; /* Abstand zwischen Text und Rahmen */
+    display: inline-block; /* Passt die Breite des Rahmens an den Inhalt an */
+    background-color: rgba(0, 0, 0, 0.5); /* Halbtransparenter Hintergrund (optional) */
+
+}
+
+/* Footer-Bild */
+.footer-container {
+    overflow: hidden; /* Bild bleibt im Container */
+    position: relative;
+    width: 100%;
+    height: 200px;
+    margin-top: 20px;
+}
+
+.footer-bild {
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    transform: translate(-50%, -50%);
+    height: 100px;
+    animation: moveAndRotate 20s linear infinite;
+}
+
+/* Animationen */
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+@keyframes moveAndRotate {
+    0% {
+        left: 100%;
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    100% {
+        left: -100%;
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+
+/* Responsivität */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.5rem;
+    }
+
+    .sub-title {
+        font-size: 1rem;
+    }
+
+    .footer-bild {
+        height: 80px;
+    }
+
+    #editable-list li {
+        font-size: 1.5rem;
+    }
+}
