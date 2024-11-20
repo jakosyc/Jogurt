@@ -151,6 +151,17 @@ main {
     animation: moveAndRotate 200s linear infinite;
 }
 
+.footer-text {
+    font-family: Arial, sans-serif; /* Arial Schriftart */
+    font-weight: normal; /* Kein fetter Text */
+    font-size: 1rem; /* Standard-Schriftgröße */
+    color: white; /* Weißer Text */
+    text-align: center; /* Zentrierter Text */
+    margin: 20px 0; /* Abstand oben und unten */
+    padding: 10px; /* Innerer Abstand */
+    width: 100%; /* Breite auf den gesamten Bildschirm ausdehnen */
+}
+
 /* Animationen */
 @keyframes bounce {
     0%, 100% {
