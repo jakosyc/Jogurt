@@ -80,7 +80,7 @@ main {
 
 #editable-list li::before {
     content: "★"; /* Stern-Symbol */
-    color: red; 
+    color: green; 
     font-size: 1.5rem;
     display: block;
     margin-bottom: 10px; /* Abstand zwischen Stern und Text */
