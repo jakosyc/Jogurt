@@ -3,18 +3,19 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: rgb(0, 0, 255); /* RGB für den gesamten Hintergrund */
+    background-color: rgb(0, 0, 255); /* RGB-Blau für den gesamten Hintergrund */
     color: white;
+    text-align: center; /* Standardzentrierung für Text */
     overflow-x: hidden; /* Verhindert horizontales Scrollen */
 }
 
 header {
-    text-align: center;
-    padding: 50px 20px;
-    display: flex; /* Flexbox, um Bild und Titel nebeneinander zu platzieren */
-    align-items: center; /* Vertikale Ausrichtung des Inhalts */
+    padding: 20px;
+    display: flex;
+    flex-direction: column; /* Elemente vertikal anordnen */
+    align-items: center; /* Inhalte horizontal zentrieren */
     justify-content: center;
-    flex-wrap: wrap; /* Bricht Inhalte bei kleinen Bildschirmen */
+    text-align: center; /* Text zentrieren */
 }
 
 .header-content {
@@ -183,24 +184,23 @@ main {
     }
 }
 
-/* Für kleinere Geräte (Smartphones im Hochformat) */
+
 @media (max-width: 768px) {
     header {
         flex-direction: column; /* Inhalte vertikal anordnen */
     }
 
     .title-image {
-        margin-right: 0; /* Abstand bei vertikaler Anordnung entfernen */
-        margin-bottom: 10px; /* Platz unter dem Bild */
+        margin-bottom: 10px;
     }
 
     header h1 {
-        font-size: 2.5rem;
-        padding: 15px 10px;
+        font-size: 2rem;
+        padding: 15px;
     }
 
     #editable-list li {
-        font-size: 1.4rem; /* Schriftgröße anpassen */
+        font-size: 1.4rem;
         margin: 15px 0;
     }
 
@@ -213,4 +213,3 @@ main {
         height: 80px; /* Bildgröße verkleinern */
     }
 }
-
