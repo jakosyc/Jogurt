@@ -84,7 +84,7 @@ main {
 
 #editable-list li::before {
     content: "★"; /* Stern-Symbol */
-    color: rgb (0,255,0); 
+    color: rgb(0, 255, 0); 
     font-size: 1.5rem;
     display: block;
     margin-bottom: 10px; /* Abstand zwischen Stern und Text */
@@ -148,7 +148,7 @@ main {
     left: 100%;
     transform: translate(-50%, -50%);
     height: 100px;
-    animation: moveAndRotate 20s linear infinite;
+    animation: moveAndRotate 200s linear infinite;
 }
 
 /* Animationen */
