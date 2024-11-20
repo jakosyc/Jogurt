@@ -12,7 +12,6 @@ body {
 header {
     padding: 20px;
     display: flex;
-    flex-direction: column; /* Elemente vertikal anordnen */
     align-items: center; /* Inhalte horizontal zentrieren */
     justify-content: center;
     text-align: center; /* Text zentrieren */
@@ -157,7 +156,7 @@ main {
     font-weight: normal; /* Kein fetter Text */
     font-size: 1rem; /* Standard-Schriftgröße */
     color: white; /* Weißer Text */
-    text-align: right; /* Zentrierter Text */
+    text-align: left; /* Zentrierter Text */
     margin: 20px 0; /* Abstand oben und unten */
     padding: 10px; /* Innerer Abstand */
     width: 100%; /* Breite auf den gesamten Bildschirm ausdehnen */
