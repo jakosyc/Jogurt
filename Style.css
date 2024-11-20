@@ -77,9 +77,15 @@ main {
     text-shadow: 3px 3px 5px black; /* Schwarzer Schatten */
 }
 
-/* Farben für Texte in einer Zeile */
-.red {
-    color: red;
+/* Farben für Texte */
+.red { color: red; }
+.blue { color: blue; }
+.green { color: green; }
+.yellow { color: yellow; }
+.purple { color: purple; }
+
+.red, .blue, .green, .yellow, .purple {
+    text-shadow: 1px 1px 2px black;
 }
 
 #editable-list li::before {
