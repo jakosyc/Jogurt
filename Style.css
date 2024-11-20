@@ -84,7 +84,7 @@ main {
 
 #editable-list li::before {
     content: "★"; /* Stern-Symbol */
-    color: rgb(0, 255, 0); 
+    color: yellow; 
     font-size: 1.5rem;
     display: block;
     margin-bottom: 10px; /* Abstand zwischen Stern und Text */
@@ -115,7 +115,7 @@ main {
 .sub-title {
     font-size:1rem;
     font-weight: bold;
-    color: yellow; /* Gelbe Schrift */
+    color: blue; /* Gelbe Schrift */
     text-shadow: 
         2px 2px 0px black, 
         0 0 10px black, 
