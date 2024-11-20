@@ -73,6 +73,13 @@ main {
     text-shadow: 3px 3px 5px black; /* Schwarzer Schatten */
 }
 
+}
+
+/* Farben für Texte in einer Zeile */
+.red {
+    color: red;
+}
+
 #editable-list li::before {
     content: "★"; /* Stern-Symbol */
     color: red; 
