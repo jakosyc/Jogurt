@@ -34,7 +34,7 @@ header {
 header h1 {
     font-size: 3rem;
     font-weight: bold;
-    color: white; /* Gelbe Schrift */
+    color: yellow; /* Gelbe Schrift */
     text-shadow: 
         2px 2px 0px black, 
         0 0 10px black, 
@@ -115,7 +115,7 @@ main {
 .sub-title {
     font-size:1rem;
     font-weight: bold;
-    color: blue; /* Gelbe Schrift */
+    color: yellow; /* Gelbe Schrift */
     text-shadow: 
         2px 2px 0px black, 
         0 0 10px black, 
