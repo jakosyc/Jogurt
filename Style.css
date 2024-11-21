@@ -25,8 +25,8 @@ header {
 }
 
 .title-image {
-    width: 200px; /* Größe des kleinen Bildes */
-    height: 200px;
+    width: 130px; /* Größe des kleinen Bildes */
+    height: 130px;
     margin-right: 20px; /* Abstand zwischen Bild und Titel */
     filter: blur(0.5px);
 }
