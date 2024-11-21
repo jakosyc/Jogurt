@@ -114,7 +114,7 @@ main {
 
 .line-small {
     font-size: 1rem;
-    font-weight: block;
+    font-weight: bold;
     display: block;
     margin-top: 3px;
     color: white; /* Leicht grauer Text */
