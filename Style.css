@@ -52,7 +52,7 @@ header h1 {
     display: inline-block;
     padding: 30px 50px;
     text-align: center;
-    background-color: rgb(0, 0, 0); /* Halbtransparenter Hintergrund (optional) */
+    background-color: rgb(255,255,255); /* Halbtransparenter Hintergrund (optional) */
 }
 
 /* Main-Bereich */
@@ -140,7 +140,7 @@ main {
     border-radius: 10px; /* Optionale Abrundung der Ecken */
     padding: 20px; /* Abstand zwischen Text und Rahmen */
     display: inline-block; /* Passt die Breite des Rahmens an den Inhalt an */
-    background-color: rgb(0, 0, 0); /* Halbtransparenter Hintergrund (optional) */
+    background-color: rgb(255,255,255); /* Halbtransparenter Hintergrund (optional) */
 
 }
 
