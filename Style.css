@@ -125,7 +125,7 @@ main {
 .sub-title {
     font-size:1rem;
     font-weight: bold;
-    color: blue; /* Gelbe Schrift */
+    color: yellow; /* Gelbe Schrift */
     text-shadow: 
         2px 2px 0px black, 
         0 0 10px black, 
@@ -139,7 +139,7 @@ main {
     border-radius: 10px; /* Optionale Abrundung der Ecken */
     padding: 20px; /* Abstand zwischen Text und Rahmen */
     display: inline-block; /* Passt die Breite des Rahmens an den Inhalt an */
-    background-color: rgba(0, 0, 0, 0.5); /* Halbtransparenter Hintergrund (optional) */
+    background-color: rgba(0, 0, 0, 0); /* Halbtransparenter Hintergrund (optional) */
 
 }
 
