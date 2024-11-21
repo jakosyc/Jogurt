@@ -74,7 +74,6 @@ main {
     margin: 25px 0;
     position: relative;
     text-align: center; /* Zentrierte Liste */
-    text-shadow: 3px 3px 5px black; /* Schwarzer Schatten */
 }
 
 /* Farben für Texte */
@@ -94,6 +93,7 @@ main {
     filter: blur(1px);
     font-size: 1.5rem;
     display: block;
+    text-shadow: 3px 3px 5px black; /* Schwarzer Schatten */
     margin-bottom: 10px; /* Abstand zwischen Stern und Text */
 }
 
@@ -101,13 +101,15 @@ main {
     font-size: 1.8rem;
     font-weight: bold;
     display: block;
+    text-shadow: 3px 3px 5px black; /* Schwarzer Schatten */
 }
 
 .line-sub {
     font-size: 1.6rem;
-    font-weight: bold;
+    font-weight: normal;
     display: block;
     margin-top: 5px;
+    text-shadow: 3px 3px 5px black; /* Schwarzer Schatten */
 }
 
 .line-small {
