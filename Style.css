@@ -168,7 +168,7 @@ main {
     color: white; /* Weißer Text */
     filter: blur(1px); /* Teletext-ähnlicher Verschwommeneffekt */
     text-shadow: 3px 3px 5px black; /* Schwarzer Schatten */
-    text-align: left; /* Zentrierter Text */
+    text-align: center; /* Zentrierter Text */
     margin: 20px 0; /* Abstand oben und unten */
     padding: 10px; /* Innerer Abstand */
     width: 100%; /* Breite auf den gesamten Bildschirm ausdehnen */
