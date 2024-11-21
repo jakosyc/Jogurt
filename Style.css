@@ -135,7 +135,7 @@ main {
     text-align: center;
     margin-top: 80px; /* Vierfacher Abstand */
 
-    border: 5px solid black; /* Schwarzer Rahmen */
+    border: 3px solid black; /* Schwarzer Rahmen */
     border-radius: 10px; /* Optionale Abrundung der Ecken */
     padding: 20px; /* Abstand zwischen Text und Rahmen */
     display: inline-block; /* Passt die Breite des Rahmens an den Inhalt an */
