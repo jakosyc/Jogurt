@@ -160,7 +160,7 @@ main {
     left: 100%;
     transform: translate(-50%, -50%);
     height: 100px;
-    animation: moveAndRotate 200s linear infinite;
+    animation: moveAndRotate 20s linear infinite;
 }
 
 .footer-text {
