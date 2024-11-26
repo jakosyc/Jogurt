@@ -92,7 +92,7 @@ main {
 }
 
 #editable-list li::before {
-    content: "⏺"; /* Stern-Symbol */
+    content: "+"; /* Stern-Symbol */
     color: yellow; 
     filter: blur(1px);
     font-size: 1.5rem;
