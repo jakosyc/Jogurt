@@ -106,19 +106,8 @@ header h1 {
     color: yellow; /* Farbe bei Hover */
 }
 
-/* Stil nur für die Überschrift auf der zweiten Seite */
-.second-page h1 {
-    font-size: 8px;
-    font-weight: normal;
-    color: orange; /* Orange Schrift */
-    text-shadow: 2px 2px 2px black; /* Leichter Schatten */
-    margin-top: 30px;
-    text-align: right; /* Zentriert */
-    text-shadow: 3px 3px 5px black; /* Schwarzer Schatten */
-    filter: blur(1px);   /* Leicht verschwommen */
-}
 
-/* Stil nur für den Textabschnitt auf der zweiten Seite */
+/* Stil nur für den Text auf der zweiten Seite */
 .second-page p {
     font-size: 8px;
     font-style: italic; /* Kursivschrift */
