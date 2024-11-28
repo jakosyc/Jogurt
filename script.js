@@ -41,8 +41,7 @@ function highlightEventFromQuery() {
         const targetElement = document.getElementById(eventId);
         if (targetElement) {
             // Listenpunkt hervorheben
-            targetElement.style.border = '1px dotted yellow';
-            targetElement.style.backgroundColor = 'blue';
+            targetElement.style.border = '1px dotted black';
             targetElement.style.transition = 'background-color 0.5s ease';
 
             // Scrollt den Listenpunkt in die Mitte des Bildschirms
