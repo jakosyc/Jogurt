@@ -58,6 +58,19 @@ header h1 {
     background: linear-gradient(to right, white 85%, rgb(255, 95, 31) 100%); 
 }
 
+/* Standard-Styling der Liste */
+#editable-list li {
+    margin: 20px 0;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Optisches Feedback für hervorgehobenen Listenpunkt */
+#editable-list li[style] {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Leichter Schatten */
+}
+
+
 /* Main-Bereich */
 main {
     text-align: center;
