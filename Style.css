@@ -141,6 +141,7 @@ main {
     color: white; /* Weiße Schrift */
     margin: 25px 0;
     position: relative;
+    letter-spacing: 2px; /* Verpixelter Look */
     text-align: center; /* Zentrierte Liste */
 }
 
