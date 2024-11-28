@@ -42,7 +42,7 @@ function highlightEventFromQuery() {
         if (targetElement) {
             // Listenpunkt hervorheben
             targetElement.style.border = '2px solid orange';
-            targetElement.style.backgroundColor = '#fff8e1';
+            targetElement.style.backgroundColor = 'blue';
             targetElement.style.transition = 'background-color 0.5s ease';
 
             // Scrollt den Listenpunkt in die Mitte des Bildschirms
