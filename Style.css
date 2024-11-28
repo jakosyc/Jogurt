@@ -65,13 +65,8 @@ header h1 {
     font-weight: bold;     /* Fett für bessere Lesbarkeit */
     font-size: 20px;       /* Schriftgröße */
     color: yellow;         /* Gelbe Schrift */
-    text-shadow: 
-        2px 2px 0px black, /* Schwarzer Schatten für Kontur */
-        -2px -2px 0px black,
-        -2px 2px 0px black,
-        2px -2px 0px black,
-        1px 1px 5px rgba(0, 0, 0, 0.5); /* Weicher Schatten */
-    filter: blur(0.5px);   /* Leicht verschwommen */
+    text-shadow: 3px 3px 5px black; /* Schwarzer Schatten */
+    filter: blur(1px);   /* Leicht verschwommen */
     transition: transform 0.2s ease-in-out; /* Animation bei Hover */
 }
 
@@ -125,16 +120,6 @@ main {
 
 .red, .blue, .green, .yellow, .purple {
     text-shadow: 1px 1px 2px black;
-}
-
-#editable-list li::before {
-    content: "+"; /* Stern-Symbol */
-    color: yellow; 
-    filter: blur(1px);
-    font-size: 1.5rem;
-    display: block;
-    text-shadow: 3px 3px 5px black; /* Schwarzer Schatten */
-    margin-bottom: 10px; /* Abstand zwischen Stern und Text */
 }
 
 .line-main {
