@@ -11,6 +11,10 @@ body {
     box-sizing: border-box; /* Berücksichtigt Rahmen und Padding in der Breite */
 }
 
+a, button {
+    cursor: crosshair;
+}
+
 header {
     padding: 20px;
     display: flex;
