@@ -108,22 +108,26 @@ header h1 {
 
 /* Stil nur für die Überschrift auf der zweiten Seite */
 .second-page h1 {
-    font-size: 36px;
-    font-weight: bold;
+    font-size: 8px;
+    font-weight: normal;
     color: orange; /* Orange Schrift */
     text-shadow: 2px 2px 2px black; /* Leichter Schatten */
     margin-top: 30px;
-    text-align: center; /* Zentriert */
+    text-align: right; /* Zentriert */
+    text-shadow: 3px 3px 5px black; /* Schwarzer Schatten */
+    filter: blur(1px);   /* Leicht verschwommen */
 }
 
 /* Stil nur für den Textabschnitt auf der zweiten Seite */
 .second-page p {
-    font-size: 16px;
+    font-size: 8px;
     font-style: italic; /* Kursivschrift */
     color: white;
-    margin: 20px auto;
-    width: 80%; /* Breite begrenzen */
-    text-align: left; /* Links ausgerichtet */
+    margin: 100px auto;
+    width: 50%; /* Breite begrenzen */
+    text-align: right; /* Links ausgerichtet */
+    text-shadow: 3px 3px 5px black; /* Schwarzer Schatten */
+    filter: blur(1px);   /* Leicht verschwommen */
 }
 
 
