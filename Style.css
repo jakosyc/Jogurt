@@ -100,10 +100,12 @@ header h1 {
     margin: 20px 0; /* Abstand oben und unten */
     padding: 10px; /* Innerer Abstand */
     width: 100%; /* Breite auf den gesamten Bildschirm ausdehnen */
+    text-decoration: none; /* Entfernt die Unterstreichung */
 }
 
 .footer-link:hover {
     color: yellow; /* Farbe bei Hover */
+    text-decoration: none; /* Entfernt die Unterstreichung */
 }
 
 
