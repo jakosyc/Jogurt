@@ -99,6 +99,7 @@ main {
     display: block;
     text-shadow: 3px 3px 5px black; /* Schwarzer Schatten */
     margin-bottom: 10px; /* Abstand zwischen Stern und Text */
+    class="share-icon" onclick="shareEvent('Event 1', 'Hier ist ein spannendes Event zum Teilen!')">+<
 }
 
 .line-main {
