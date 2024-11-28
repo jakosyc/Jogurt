@@ -41,7 +41,7 @@ function highlightEventFromQuery() {
         const targetElement = document.getElementById(eventId);
         if (targetElement) {
             // Listenpunkt hervorheben
-            targetElement.style.border = '2px solid orange';
+            targetElement.style.border = '1px dotted yellow';
             targetElement.style.backgroundColor = 'blue';
             targetElement.style.transition = 'background-color 0.5s ease';
 
