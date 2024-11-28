@@ -58,11 +58,34 @@ header h1 {
     background: linear-gradient(to right, white 85%, rgb(255, 95, 31) 100%); 
 }
 
+.share-icon {
+    display: inline-block; /* Block-Level für bessere Positionierung */
+    margin-right: 10px;    /* Abstand rechts */
+    cursor: pointer;       /* Zeigt an, dass es anklickbar ist */
+    font-weight: bold;     /* Fett für bessere Lesbarkeit */
+    font-size: 20px;       /* Schriftgröße */
+    color: yellow;         /* Gelbe Schrift */
+    text-shadow: 
+        2px 2px 0px black, /* Schwarzer Schatten für Kontur */
+        -2px -2px 0px black,
+        -2px 2px 0px black,
+        2px -2px 0px black,
+        1px 1px 5px rgba(0, 0, 0, 0.5); /* Weicher Schatten */
+    filter: blur(0.5px);   /* Leicht verschwommen */
+    transition: transform 0.2s ease-in-out; /* Animation bei Hover */
+}
+
 /* Standard-Styling der Liste */
 #editable-list li {
     margin: 20px 0;
     padding: 10px;
     border-radius: 5px;
+}
+
+/* Hover-Effekt für das Teilen-Symbol */
+.share-icon:hover {
+    transform: scale(1.2); /* Vergrößert das Symbol beim Hover */
+    
 }
 
 /* Optisches Feedback für hervorgehobenen Listenpunkt */
