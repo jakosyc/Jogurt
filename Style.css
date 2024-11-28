@@ -277,7 +277,7 @@ main {
     header {
         flex-direction: column; /* Inhalte vertikal anordnen */
         overflow-x: hidden; /* Verhindert horizontales Scrollen */
-        width: 90%; /* Passe die Breite des Ovals an */
+        width: 100%; /* Passe die Breite des Ovals an */
     }
 
     .title-image {
