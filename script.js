@@ -57,3 +57,14 @@ document.querySelectorAll('.share-icon').forEach((icon) => {
 
 // Query-Parameter beim Laden der Seite auswerten
 window.addEventListener('DOMContentLoaded', highlightEventFromQuery);
+
+document.querySelector('.sub-title').addEventListener('click', function() {
+    // Füge die "shake"-Klasse hinzu
+    this.classList.add('shake');
+
+    // Entferne die "shake"-Klasse nach der Animation, um sie für den nächsten Klick wiederverwendbar zu machen
+    setTimeout(() => {
+        this.classList.remove('shake');
+    }, 500); // Entspricht der Dauer der Animation (in ms)
+});
+
