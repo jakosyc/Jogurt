@@ -11,8 +11,7 @@ body {
     box-sizing: border-box; /* Berücksichtigt Rahmen und Padding in der Breite */
 }
 
-a, button {
-    cursor: crosshair;
+      cursor: url('arschmitfingern.transp.png'), auto; /* Pfad zum Bild */
 }
 
 header {
