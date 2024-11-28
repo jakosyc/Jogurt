@@ -88,6 +88,25 @@ header h1 {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Leichter Schatten */
 }
 
+/* Styling für den Footer-Link */
+.footer-link {
+    font-family: Arial, sans-serif; /* Arial Schriftart */
+    font-weight: normal; /* Kein fetter Text */
+    font-size: 1rem; /* Standard-Schriftgröße */
+    color: white; /* Weißer Text */
+    filter: blur(1px); /* Teletext-ähnlicher Verschwommeneffekt */
+    text-shadow: 3px 3px 5px black; /* Schwarzer Schatten */
+    text-align: center; /* Zentrierter Text */
+    margin: 20px 0; /* Abstand oben und unten */
+    padding: 10px; /* Innerer Abstand */
+    width: 100%; /* Breite auf den gesamten Bildschirm ausdehnen */
+}
+
+.footer-link:hover {
+    color: orange; /* Farbe bei Hover */
+    text-decoration: underline; /* Unterstreicht beim Hover */
+}
+
 
 /* Main-Bereich */
 main {
