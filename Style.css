@@ -79,7 +79,7 @@ header h1 {
 
 /* Hover-Effekt für das Teilen-Symbol */
 .share-icon:hover {
-    transform: scale(4); /* Vergrößert das Symbol beim Hover */
+    transform: scale(10); /* Vergrößert das Symbol beim Hover */
     
 }
 
