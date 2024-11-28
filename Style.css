@@ -224,6 +224,7 @@ main {
     position: absolute;
     top: 50%;
     left: 100%;
+    filter: blur(1px); /* Teletext-ähnlicher Verschwommeneffekt */
     transform: translate(-50%, -50%);
     height: 100px;
     animation: moveAndRotate 50s linear infinite;
