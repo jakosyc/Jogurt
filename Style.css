@@ -103,8 +103,7 @@ header h1 {
 }
 
 .footer-link:hover {
-    color: orange; /* Farbe bei Hover */
-    text-decoration: underline; /* Unterstreicht beim Hover */
+    color: yellow; /* Farbe bei Hover */
 }
 
 
