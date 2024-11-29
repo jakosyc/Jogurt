@@ -11,6 +11,7 @@ body {
     overflow-y: auto;   /* Ermöglicht vertikales Scrollen */
     box-sizing: border-box; /* Berücksichtigt Rahmen und Padding in der Breite */
 }
+
       cursor: url('arschmitfingern.transp.png'), auto; /* Pfad zum Bild */
 }
 
