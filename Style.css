@@ -7,7 +7,8 @@ body {
     background-color: rgb(0, 0, 255); /* RGB-Blau für den gesamten Hintergrund */
     color: white;
     text-align: center; /* Standardzentrierung für Text */
-    overflow-x: hidden; /* Verhindert horizontales Scrollen */
+    overflow-x: hidden; /* Verhindert horizontales Scrollen, ohne vertikales zu blockieren */
+    overflow-y: auto;   /* Ermöglicht vertikales Scrollen */
     box-sizing: border-box; /* Berücksichtigt Rahmen und Padding in der Breite */
 }
 
@@ -16,6 +17,7 @@ body {
 
 /* Stil für die obere Zeile */
 #top-bar {
+    position: fixed !important;
     background-color: black; /* Schwarzer Hintergrund */
     color: white; /* Standard-Schriftfarbe */
     font-family: Arial, sans-serif; /* Schriftart */
@@ -29,7 +31,7 @@ body {
     left: 0; /* Start ganz links */
     width: 100%; /* Vollständige Breite */
     height: auto; /* Höhe passt sich dem Inhalt an */
-    z-index: 1000; /* Priorität über anderen Elementen */
+    z-index: 9999; /* Priorität über anderen Elementen */
     box-sizing: border-box; /* Beachtet Padding bei der Breitenberechnung */
     border-bottom: 2px solid gray; /* Optional: Untere Linie für Abgrenzung */
 }
