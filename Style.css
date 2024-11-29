@@ -66,7 +66,7 @@ header {
     width: 130px; /* Größe des kleinen Bildes */
     height: 130px;
     margin-right: 20px; /* Abstand zwischen Bild und Titel */
-    filter: blur(0.5px);
+    filter: blur(0.8px);
 }
 
 
