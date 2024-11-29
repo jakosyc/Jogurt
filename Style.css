@@ -16,8 +16,6 @@ body {
 #top-bar {
     position: fixed !important;
     background-color: white; /* Schwarzer Hintergrund */
-    color: black; /* Standard-Schriftfarbe */
-   font-family: 'terminal-grotesque-webfont'; /* Name der Schriftart */
     font-size: 14px; /* Schriftgröße */
     padding: 10px 20px; /* Abstand innerhalb der Zeile */
     display: flex; /* Flexbox für einfache Anordnung */
