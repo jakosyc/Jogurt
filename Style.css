@@ -29,6 +29,7 @@ body {
     height: auto; /* Höhe passt sich dem Inhalt an */
     z-index: 9999; /* Priorität über anderen Elementen */
     box-sizing: border-box; /* Beachtet Padding bei der Breitenberechnung */
+    border-bottom: 2px black; /* Optional: Untere Linie für Abgrenzung */
 }
 
 
