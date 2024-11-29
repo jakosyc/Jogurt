@@ -29,7 +29,7 @@ body {
     left: 0; /* Startet ganz links */
     width: 100%; /* Nimmt die gesamte Breite ein */
     height: auto; /* Passt sich dem Inhalt an */
-    z-index: 1000; /* Wird vor anderen Elementen angezeigt */
+    z-index: 10000; /* Wird vor anderen Elementen angezeigt */
     box-sizing: border-box; /* Beachtet Padding bei der Größenberechnung */
 }
 
