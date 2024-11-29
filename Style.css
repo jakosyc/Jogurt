@@ -186,7 +186,7 @@ main {
 }
 
 #editable-list li {
-    font-size: 1.8rem;
+    font-size: 1.4rem;
     font-weight: bold; /* Arial Bold */
     color: white; /* Weiße Schrift */
     margin: 25px 0;
@@ -207,14 +207,14 @@ main {
 }
 
 .line-main {
-    font-size: 1.8rem;
+    font-size: 1.4rem;
     font-weight: bold;
     display: block;
     text-shadow: 3px 3px 5px black; /* Schwarzer Schatten */
 }
 
 .line-sub {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     font-weight: normal;
     display: block;
     margin-top: 5px;
