@@ -21,7 +21,7 @@ body {
     position: fixed !important;
     background-color: black; /* Schwarzer Hintergrund */
     color: black; /* Standard-Schriftfarbe */
-    font-family: Arial, sans-serif;/
+    font-family: Arial, sans-serif;
     font-size: 14px; /* Schriftgröße */
     padding: 10px 20px; /* Abstand innerhalb der Zeile */
     display: flex; /* Flexbox für einfache Anordnung */
