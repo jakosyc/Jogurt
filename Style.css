@@ -40,6 +40,11 @@ body {
     color: white;
     font-weight: bold;
     font-family: Arial, sans-serif; /* Schriftart */
+    text-shadow: 
+        2px 2px 0px black, 
+        0 0 10px black, 
+        0 0 20px black; /* Starker verschwommener Effekt */
+    filter: blur(1px); /* Teletext-ähnlicher Verschwommeneffekt */
 }
 
 /* Stil für die Uhrzeit */
@@ -47,6 +52,11 @@ body {
     color: white;
     font-weight: normal;
     font-family: Arial, sans-serif; /* Schriftart */
+    text-shadow: 
+        2px 2px 0px black, 
+        0 0 10px black, 
+        0 0 20px black; /* Starker verschwommener Effekt */
+    filter: blur(1px); /* Teletext-ähnlicher Verschwommeneffekt */
 }
 
 header {
