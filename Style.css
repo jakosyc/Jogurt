@@ -15,6 +15,7 @@ body {
       cursor: url('arschmitfingern.transp.png'), auto; /* Pfad zum Bild */
 }
 
+
 /* Stil für die obere Zeile */
 #top-bar {
     position: fixed !important;
@@ -39,7 +40,7 @@ body {
 #date {
     color: white;
     font-weight: bold;
-    font-family: Arial, sans-serif; /* Schriftart */
+    font-family: 'CustomFont', sans-serif; /* Fallback zu sans-serif */
     text-shadow: 
         2px 2px 0px black, 
         0 0 10px black, 
@@ -51,7 +52,7 @@ body {
 #time {
     color: white;
     font-weight: normal;
-    font-family: Arial, sans-serif; /* Schriftart */
+      font-family: 'CustomFont', sans-serif; /* Fallback zu sans-serif */
     text-shadow: 
         2px 2px 0px black, 
         0 0 10px black, 
@@ -324,6 +325,13 @@ main {
     }
 }
 
+@font-face {
+    font-family: 'CustomFont'; /* Name der Schriftart */
+    src: url('fake receipt.ttf') format('ttf'), /* Moderne Browser */
+         url('FT88-Regular.ttf') format('ttf');   /* Ältere Browser */
+    font-weight: normal; /* Optional: Gewicht der Schriftart */
+    font-style: normal;  /* Optional: Stil der Schriftart */
+}
 
 @media (max-width: 750px) {
     header {
