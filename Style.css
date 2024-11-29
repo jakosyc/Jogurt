@@ -1,15 +1,6 @@
 /* Allgemeines Styling */
 body {
-
-    content: ''; /* Erzeugt ein leeres Pseudo-Element */
-    display: block; /* Macht das Pseudo-Element sichtbar */
-    width: 100%; /* Deckt die gesamte Breite ab */
-    height: 20px; /* Höhe der weißen Zeile */
-    background-color: white; /* Weiße Farbe */
-    position: fixed; /* Fixiert die Zeile oben */
-    top: 0;
-    left: 0;
-    z-index: 1000; /* Sicherstellt, dass es vor anderen Elementen liegt */
+    
 }
     font-family: Arial, sans-serif;
     font-weight: bold;
@@ -21,6 +12,18 @@ body {
     overflow-x: hidden; /* Verhindert horizontales Scrollen, ohne vertikales zu blockieren */
     overflow-y: auto;   /* Ermöglicht vertikales Scrollen */
     box-sizing: border-box; /* Berücksichtigt Rahmen und Padding in der Breite */
+}
+
+   content: ''; /* Erzeugt ein leeres Pseudo-Element */
+    display: block; /* Macht das Pseudo-Element sichtbar */
+    width: 100%; /* Deckt die gesamte Breite ab */
+    height: 20px; /* Höhe der weißen Zeile */
+    background-color: white; /* Weiße Farbe */
+    position: fixed; /* Fixiert die Zeile oben */
+    top: 0;
+    left: 0;
+    z-index: 1000; /* Sicherstellt, dass es vor anderen Elementen liegt */
+
 }
 
       cursor: url('arschmitfingern.transp.png'), auto; /* Pfad zum Bild */
