@@ -27,9 +27,9 @@ body {
     left: 0; /* Start ganz links */
     width: 100%; /* Vollständige Breite */
     height: auto; /* Höhe passt sich dem Inhalt an */
-    z-index: 9999; /* Priorität über anderen Elementen */
     box-sizing: border-box; /* Beachtet Padding bei der Breitenberechnung */
-    border-bottom: 2px black; /* Optional: Untere Linie für Abgrenzung */
+    border-bottom: 5px black; /* Optional: Untere Linie für Abgrenzung */
+    z-index: 9999; /* Priorität über anderen Elementen */
 }
 
 
@@ -38,15 +38,16 @@ body {
 
 /* Stil für das Datum */
 #date {
-    color: yellow;
-    font-weight: bold;
+  color: yellow;
+    font-weight: normal;
     font-family: Arial, sans-serif; /* Arial Schriftart */
     text-shadow: 
         2px 2px 0px black, 
         0 0 10px black, 
         0 0 20px black; /* Starker verschwommener Effekt */
-    filter: blur(1px); /* Teletext-ähnlicher Verschwommeneffekt */
+    filter: blur(0.8px); /* Teletext-ähnlicher Verschwommeneffekt */
 }
+
 
 /* Stil für die Uhrzeit */
 #time {
@@ -57,7 +58,7 @@ body {
         2px 2px 0px black, 
         0 0 10px black, 
         0 0 20px black; /* Starker verschwommener Effekt */
-    filter: blur(1px); /* Teletext-ähnlicher Verschwommeneffekt */
+    filter: blur(0.8px); /* Teletext-ähnlicher Verschwommeneffekt */
 }
 
 header {
