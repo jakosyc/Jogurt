@@ -16,22 +16,24 @@ body {
 
 /* Stil für die obere Zeile */
 #top-bar {
-    background-color: black; /* Schwarze Hintergrundfarbe */
-    color: white;
-    font-family: FT88, regular;
-    font-size: 16px;
-    padding: 10px 20px; /* Platz innerhalb der Zeile */
-    display: flex;
-    justify-content: space-between;
-    align-items: left;
+    background-color: black; /* Schwarzer Hintergrund */
+    color: white; /* Standard-Schriftfarbe */
+    font-family: Arial, sans-serif; /* Schriftart */
+    font-size: 16px; /* Schriftgröße */
+    padding: 10px 20px; /* Abstand innerhalb der Zeile */
+    display: flex; /* Flexbox für einfache Anordnung */
+    justify-content: space-between; /* Datum links, Uhrzeit rechts */
+    align-items: center; /* Zentrierte Ausrichtung */
     position: fixed; /* Fixiert am oberen Rand */
-    top: 0; /* Startet direkt am oberen Rand */
-    left: 0; /* Startet ganz links */
-    width: 100%; /* Nimmt die gesamte Breite ein */
-    height: auto; /* Passt sich dem Inhalt an */
-    z-index: 10000; /* Wird vor anderen Elementen angezeigt */
-    box-sizing: border-box; /* Beachtet Padding bei der Größenberechnung */
+    top: 0; /* Start am oberen Rand */
+    left: 0; /* Start ganz links */
+    width: 100%; /* Vollständige Breite */
+    height: auto; /* Höhe passt sich dem Inhalt an */
+    z-index: 1000; /* Priorität über anderen Elementen */
+    box-sizing: border-box; /* Beachtet Padding bei der Breitenberechnung */
+    border-bottom: 2px solid gray; /* Optional: Untere Linie für Abgrenzung */
 }
+
 
 
 /* Stil für das Datum */
