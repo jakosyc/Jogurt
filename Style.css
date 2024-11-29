@@ -21,7 +21,7 @@ body {
     position: fixed !important;
     background-color: black; /* Schwarzer Hintergrund */
     color: black; /* Standard-Schriftfarbe */
-    font-family: Arial, sans-serif; /* Arial Schriftart */
+   font-family: 'terminal-grotesque-webfont'; /* Name der Schriftart */
     font-size: 14px; /* Schriftgröße */
     padding: 10px 20px; /* Abstand innerhalb der Zeile */
     display: flex; /* Flexbox für einfache Anordnung */
@@ -326,8 +326,8 @@ main {
 }
 
 @font-face {
-    font-family: 'CustomFont'; /* Name der Schriftart */
-    src: url('kaerukaeru-Regular.woff') format('woff'), /* Moderne Browser */
+    font-family: 'terminal-grotesque-webfont'; /* Name der Schriftart */
+    src: url('fonts/terminal-grotesque-webfont.woff2') format('woff2'), /* Moderne Browser */
     font-weight: normal; /* Optional: Gewicht der Schriftart */
     font-style: normal;  /* Optional: Stil der Schriftart */
 }
