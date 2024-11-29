@@ -80,7 +80,7 @@ header {
     width: 130px; /* Größe des kleinen Bildes */
     height: 130px;
     margin-right: 20px; /* Abstand zwischen Bild und Titel */
-    filter: blur(0.8px);
+    filter: blur(0.5px);
 }
 
 
@@ -186,7 +186,7 @@ main {
 }
 
 #editable-list li {
-    font-size: 1.4rem;
+    font-size: 1.8rem;
     font-weight: bold; /* Arial Bold */
     color: white; /* Weiße Schrift */
     margin: 25px 0;
@@ -214,7 +214,7 @@ main {
 }
 
 .line-sub {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     font-weight: normal;
     display: block;
     margin-top: 5px;
@@ -222,7 +222,7 @@ main {
 }
 
 .line-small {
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-weight: normal;
     display: block;
     margin-top: 3px;
@@ -232,7 +232,7 @@ main {
 
 /* Untertitel */
 .sub-title {
-    font-size:1rem;
+    font-size:1.4rem;
     font-weight: bold;
     color: yellow; /* Gelbe Schrift */
     text-shadow: 
@@ -332,7 +332,7 @@ main {
     font-style: normal;  /* Optional: Stil der Schriftart */
 }
 
-@media (max-width: 750px) {
+@media (max-width: 780px) {
     header {
         flex-direction: column; /* Inhalte vertikal anordnen */
         overflow-x: hidden; /* Verhindert horizontales Scrollen */
@@ -352,7 +352,7 @@ main {
     }
 
     #editable-list li {
-        font-size: 0.7rem;
+        font-size: 1rem;
         margin: 15px 0;
         align-items: center;
     }
