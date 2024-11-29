@@ -20,7 +20,7 @@ body {
     position: fixed !important;
     background-color: black; /* Schwarzer Hintergrund */
     color: white; /* Standard-Schriftfarbe */
-    font-family: FT88, italic; /* Schriftart */
+    font-family: Arial, italic; /* Schriftart */
     font-size: 16px; /* Schriftgröße */
     padding: 10px 20px; /* Abstand innerhalb der Zeile */
     display: flex; /* Flexbox für einfache Anordnung */
