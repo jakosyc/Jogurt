@@ -6,7 +6,7 @@ body {
     font-weight: bold;
     margin: 20px;
     padding: 0;
-    background-color: rgb(0,0,255);
+    background-color: rgb(0, 0, 255); /* RGB-Blau für den gesamten Hintergrund */
     color: blue;
     text-align: center; /* Standardzentrierung für Text */
     overflow-x: hidden; /* Verhindert horizontales Scrollen, ohne vertikales zu blockieren */
