@@ -26,7 +26,6 @@ body {
     display: flex; /* Flexbox für einfache Anordnung */
     justify-content: space-between; /* Datum links, Uhrzeit rechts */
     align-items: center; /* Zentrierte Ausrichtung */
-    position: fixed; /* Fixiert am oberen Rand */
     top: 0; /* Start am oberen Rand */
     left: 0; /* Start ganz links */
     width: 100%; /* Vollständige Breite */
