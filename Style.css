@@ -35,18 +35,18 @@ body {
     border-bottom: 2px solid gray; /* Optional: Untere Linie für Abgrenzung */
 }
 
-
-
 /* Stil für das Datum */
 #date {
-    color: red;
+    color: white;
     font-weight: bold;
+    font-family: FakeReceipt-Regular; /* Schriftart */
 }
 
 /* Stil für die Uhrzeit */
 #time {
     color: white;
     font-weight: normal;
+    font-family: FakeReceipt-Regular; /* Schriftart */
 }
 
 header {
