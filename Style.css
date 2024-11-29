@@ -5,7 +5,7 @@ body {
     margin: 10px;
     padding: 0;
     background-color: rgb(255, 255, 255); /* RGB-Blau für den gesamten Hintergrund */
-    color: white;
+    color: blue;
     text-align: center; /* Standardzentrierung für Text */
     overflow-x: hidden; /* Verhindert horizontales Scrollen, ohne vertikales zu blockieren */
     overflow-y: auto;   /* Ermöglicht vertikales Scrollen */
@@ -19,7 +19,7 @@ body {
 #top-bar {
     position: fixed !important;
     background-color: black; /* Schwarzer Hintergrund */
-    color: white; /* Standard-Schriftfarbe */
+    color: black; /* Standard-Schriftfarbe */
     font-family: Arial, sans-serif;/
     font-size: 14px; /* Schriftgröße */
     padding: 10px 20px; /* Abstand innerhalb der Zeile */
