@@ -5,7 +5,7 @@ body {
     margin: 20px;
     padding: 0;
     background-color: rgb(0, 0, 255); /* RGB-Blau für den gesamten Hintergrund */
-    color: blue;
+    color: white;
     text-align: center; /* Standardzentrierung für Text */
     overflow-x: hidden; /* Verhindert horizontales Scrollen, ohne vertikales zu blockieren */
     overflow-y: auto;   /* Ermöglicht vertikales Scrollen */
