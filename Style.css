@@ -40,14 +40,14 @@ body {
 #date {
     color: blue;
     font-weight: bold;
-    font-family: FakeReceipt-Regular; /* Schriftart */
+    font-family: Arial, sans-serif; /* Schriftart */
 }
 
 /* Stil für die Uhrzeit */
 #time {
     color: blue;
     font-weight: normal;
-    font-family: FakeReceipt-Regular; /* Schriftart */
+    font-family: Arial, sans-serif; /* Schriftart */
 }
 
 header {
