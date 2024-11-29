@@ -16,21 +16,23 @@ body {
 
 /* Stil für die obere Zeile */
 #top-bar {
-    background-color: black;
+    background-color: black; /* Schwarze Hintergrundfarbe */
     color: white;
     font-family: Arial, sans-serif;
     font-size: 16px;
-    padding: 10px;
-    text-align: center;
+    padding: 10px 20px; /* Platz innerhalb der Zeile */
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1000; /* Damit die Zeile immer sichtbar bleibt */
+    position: fixed; /* Fixiert am oberen Rand */
+    top: 0; /* Startet direkt am oberen Rand */
+    left: 0; /* Startet ganz links */
+    width: 100%; /* Nimmt die gesamte Breite ein */
+    height: auto; /* Passt sich dem Inhalt an */
+    z-index: 1000; /* Wird vor anderen Elementen angezeigt */
+    box-sizing: border-box; /* Beachtet Padding bei der Größenberechnung */
 }
+
 
 /* Stil für das Datum */
 #date {
