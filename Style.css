@@ -316,11 +316,11 @@ main {
 
 @keyframes moveAndRotate {
     0% {
-        left: 100%;
+        left: 150%;
         transform: translate(-50%, -50%) rotate(0deg);
     }
     100% {
-        left: -100%;
+        left: -150%;
         transform: translate(-50%, -50%) rotate(360deg);
     }
 }
