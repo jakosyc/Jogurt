@@ -234,7 +234,7 @@ main {
     margin-top: 80px; /* Vierfacher Abstand */
 
     border: 3px solid black; /* Schwarzer Rahmen */
-    border-radius: 10px; /* Optionale Abrundung der Ecken */
+    border-radius: 0px; /* Optionale Abrundung der Ecken */
     padding: 20px; /* Abstand zwischen Text und Rahmen */
     display: inline-block; /* Passt die Breite des Rahmens an den Inhalt an */
     background-color: rgb(255,255,255); /* Halbtransparenter Hintergrund (optional) */
