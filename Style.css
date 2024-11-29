@@ -38,25 +38,25 @@ body {
 
 /* Stil für das Datum */
 #date {
-    color: black;
+    color: yellow;
     font-weight: bold;
     font-family: Arial, sans-serif; /* Arial Schriftart */
     text-shadow: 
-        2px 2px 0px white, 
-        0 0 10px white, 
-        0 0 20px white; /* Starker verschwommener Effekt */
+        2px 2px 0px black, 
+        0 0 10px black, 
+        0 0 20px black; /* Starker verschwommener Effekt */
     filter: blur(1px); /* Teletext-ähnlicher Verschwommeneffekt */
 }
 
 /* Stil für die Uhrzeit */
 #time {
-    color: white;
+    color: yellow;
     font-weight: normal;
     font-family: Arial, sans-serif; /* Arial Schriftart */
     text-shadow: 
-        2px 2px 0px white, 
-        0 0 10px white, 
-        0 0 20px white; /* Starker verschwommener Effekt */
+        2px 2px 0px black, 
+        0 0 10px black, 
+        0 0 20px black; /* Starker verschwommener Effekt */
     filter: blur(1px); /* Teletext-ähnlicher Verschwommeneffekt */
 }
 
