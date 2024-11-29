@@ -1,7 +1,5 @@
 /* Allgemeines Styling */
 body {
-    
-}
     font-family: Arial, sans-serif;
     font-weight: bold;
     margin: 20px;
@@ -38,14 +36,14 @@ body {
 
 /* Stil für das Datum */
 #date {
-    color: blue;
+    color: white;
     font-weight: bold;
     font-family: Arial, sans-serif; /* Schriftart */
 }
 
 /* Stil für die Uhrzeit */
 #time {
-    color: blue;
+    color: white;
     font-weight: normal;
     font-family: Arial, sans-serif; /* Schriftart */
 }
