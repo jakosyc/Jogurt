@@ -1,6 +1,6 @@
 /* Allgemeines Styling */
 body {
-    font-family: Arial, sans-serif;
+   font-family: 'CustomFont';
     font-weight: bold;
     margin: 20px;
     padding: 0;
@@ -327,7 +327,7 @@ main {
 
 @font-face {
     font-family: 'CustomFont'; /* Name der Schriftart */
-    src: url('fake receipt.ttf') format('ttf'), /* Moderne Browser */
+    src: url('kaerukaeru-Regular.woff') format('woff'), /* Moderne Browser */
     font-weight: normal; /* Optional: Gewicht der Schriftart */
     font-style: normal;  /* Optional: Stil der Schriftart */
 }
