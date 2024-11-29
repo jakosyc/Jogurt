@@ -1,6 +1,6 @@
 /* Allgemeines Styling */
 body {
-   font-family: 'CustomFont';
+    font-family: Arial, sans-serif; /* Arial Schriftart */
     font-weight: bold;
     margin: 20px;
     padding: 0;
@@ -21,7 +21,7 @@ body {
     position: fixed !important;
     background-color: black; /* Schwarzer Hintergrund */
     color: black; /* Standard-Schriftfarbe */
-    font-family: 'CustomFont', sans-serif; /* Fallback zu sans-serif */
+    font-family: Arial, sans-serif; /* Arial Schriftart */
     font-size: 14px; /* Schriftgröße */
     padding: 10px 20px; /* Abstand innerhalb der Zeile */
     display: flex; /* Flexbox für einfache Anordnung */
@@ -40,7 +40,7 @@ body {
 #date {
     color: white;
     font-weight: bold;
-    font-family: 'CustomFont', sans-serif; /* Fallback zu sans-serif */
+    font-family: Arial, sans-serif; /* Arial Schriftart */
     text-shadow: 
         2px 2px 0px black, 
         0 0 10px black, 
@@ -52,7 +52,7 @@ body {
 #time {
     color: white;
     font-weight: normal;
-      font-family: 'CustomFont', sans-serif; /* Fallback zu sans-serif */
+    font-family: Arial, sans-serif; /* Arial Schriftart */
     text-shadow: 
         2px 2px 0px black, 
         0 0 10px black, 
