@@ -10,15 +10,6 @@ body {
     box-sizing: border-box; /* Berücksichtigt Rahmen und Padding in der Breite */ 
 }
 
-.toggle-box {
-    position: fixed; /* Bleibt immer in der Ecke */
-    top: 0px; /* Abstand vom oberen Rand */
-    right: 00px; /* Abstand vom rechten Rand */
-    width: 10px; /* Breite des Rechtecks */
-    height: 10px; /* Höhe des Rechtecks */
-    background-color: white; /* Farbe */
-    cursor: pointer; /* Zeigt an, dass es anklickbar ist */
-
 /* Stil für das Datum */
 #date {
     color: white;
