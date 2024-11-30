@@ -10,7 +10,7 @@ body {
 
 /* Stil für das Datum */
 #date {
-  color: yellow;
+    color: white;
     font-weight: normal;
     font-family: Arial, sans-serif; /* Arial Schriftart */
     text-shadow: 
@@ -18,12 +18,13 @@ body {
         0 0 10px black, 
         0 0 20px black; /* Starker verschwommener Effekt */
     filter: blur(0.8px); /* Teletext-ähnlicher Verschwommeneffekt */
+    text-align: center; /* Text zentrieren */
 }
 
 
 /* Stil für die Uhrzeit */
 #time {
-    color: yellow;
+    color: white;
     font-weight: normal;
     font-family: Arial, sans-serif; /* Arial Schriftart */
     text-shadow: 
@@ -31,6 +32,7 @@ body {
         0 0 10px black, 
         0 0 20px black; /* Starker verschwommener Effekt */
     filter: blur(0.8px); /* Teletext-ähnlicher Verschwommeneffekt */
+    text-align: center; /* Text zentrieren */
 }
 
 header {
@@ -86,7 +88,7 @@ header h1 {
     margin-right: 10px;    /* Abstand rechts */
     cursor: pointer;       /* Zeigt an, dass es anklickbar ist */
     font-weight: bold;     /* Fett für bessere Lesbarkeit */
-    font-size: 20px;       /* Schriftgröße */
+    font-size: 40px;       /* Schriftgröße */
     color: yellow;         /* Gelbe Schrift */
     text-shadow: 3px 3px 5px black; /* Schwarzer Schatten */
     filter: blur(1px);   /* Leicht verschwommen */
@@ -136,6 +138,7 @@ header h1 {
 .second-page p {
     font-size: 8px;
     font-style: italic; /* Kursivschrift */
+    text-align: center;
     color: white;
     margin: 100px auto;
     width: 50%; /* Breite begrenzen */
@@ -168,17 +171,6 @@ main {
     text-align: center; /* Zentrierte Liste */
 }
 
-/* Farben für Texte */
-.red { color: red; }
-.blue { color: blue; }
-.green { color: green; }
-.yellow { color: yellow; }
-.purple { color: purple; }
-
-.red, .blue, .green, .yellow, .purple {
-    text-shadow: 1px 1px 2px black;
-}
-
 .line-main {
     font-size: 1.6rem;
     font-weight: bold;
@@ -201,6 +193,17 @@ main {
     margin-top: 3px;
     color: white; /* Leicht grauer Text */
     text-shadow: 3px 3px 5px black; /* Schwarzer Schatten */
+}
+
+/* Farben für Texte */
+.red { color: red; }
+.blue { color: blue; }
+.green { color: green; }
+.yellow { color: yellow; }
+.purple { color: purple; }
+
+.red, .blue, .green, .yellow, .purple {
+    text-shadow: 1px 1px 2px black;
 }
 
 /* Untertitel */
