@@ -14,13 +14,10 @@ body {
     position: fixed; /* Bleibt immer in der Ecke */
     top: 0px; /* Abstand vom oberen Rand */
     right: 00px; /* Abstand vom rechten Rand */
-    width: 50px; /* Breite des Rechtecks */
-    height: 50px; /* Höhe des Rechtecks */
+    width: 10px; /* Breite des Rechtecks */
+    height: 10px; /* Höhe des Rechtecks */
     background-color: white; /* Farbe */
-    border: 2px solid black; /* Optionale Umrandung */
     cursor: pointer; /* Zeigt an, dass es anklickbar ist */
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Optionaler Schatten */
-}
 
 /* Stil für das Datum */
 #date {
