@@ -89,7 +89,7 @@ header h1 {
     margin-right: 10px;    /* Abstand rechts */
     cursor: pointer;       /* Zeigt an, dass es anklickbar ist */
     font-weight: bold;     /* Fett für bessere Lesbarkeit */
-    font-size: 40px;       /* Schriftgröße */
+    font-size: 30px;       /* Schriftgröße */
     color: yellow;         /* Gelbe Schrift */
     text-shadow: 3px 3px 5px black; /* Schwarzer Schatten */
     filter: blur(1px);   /* Leicht verschwommen */
@@ -151,6 +151,7 @@ header h1 {
 
 /* Main-Bereich */
 main {
+    font-family: Arial, sans-serif; /* Arial Schriftart */
     text-align: center;
     padding: 0px;
 }
@@ -210,6 +211,7 @@ main {
 /* Untertitel */
 .sub-title {
     font-size:1.4rem;
+    font-family: Arial, sans-serif; /* Arial Schriftart */
     font-weight: bold;
     color: yellow; /* Gelbe Schrift */
     text-shadow: 
