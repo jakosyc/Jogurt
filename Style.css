@@ -5,11 +5,15 @@ body {
     margin: 20px;
     padding: 0;
     background-color: rgb(0, 0, 255); /* RGB-Blau für den gesamten Hintergrund */
-    color: white;
+    color: yellow;
     text-align: center; /* Standardzentrierung für Text */
     overflow-x: hidden; /* Verhindert horizontales Scrollen, ohne vertikales zu blockieren */
     overflow-y: auto;   /* Ermöglicht vertikales Scrollen */
-    box-sizing: border-box; /* Berücksichtigt Rahmen und Padding in der Breite */
+    box-sizing: border-box; /* Berücksichtigt Rahmen und Padding in der Breite */ text-shadow: 
+        2px 2px 0px black, 
+        0 0 10px black, 
+        0 0 20px black; /* Starker verschwommener Effekt */
+    filter: blur(0.8px); /* Teletext-ähnlicher Verschwommeneffekt */
 }
 
 /* Stil für die obere Zeile */
