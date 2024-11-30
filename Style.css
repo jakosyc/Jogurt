@@ -1,5 +1,6 @@
 /* Allgemeines Styling */
 body {
+    font-family: Arial, sans-serif; /* Arial Schriftart */
     text-align: center; /* Text zentrieren */
     margin: 20px;
     padding: 0;
@@ -61,6 +62,7 @@ header {
 
 
 header h1 {
+    font-family: Arial, sans-serif; /* Arial Schriftart */
     font-size: 3rem;
     font-weight: bold;
     color: yellow; /* Gelbe Schrift */
