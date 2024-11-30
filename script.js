@@ -99,3 +99,14 @@ setInterval(updateDateTime, 1000);
 
 // Starte die Funktion direkt beim Laden der Seite
 updateDateTime();
+
+document.getElementById("style-toggle").addEventListener("click", function () {
+    const currentStylesheet = document.getElementById("theme-stylesheet");
+    
+    // Überprüfe, welches Stylesheet derzeit aktiv ist
+    if (currentStylesheet.getAttribute("href") === "style.css") {
+        currentStylesheet.setAttribute("href", "alternate-style.css"); // Neues Stylesheet
+    } else {
+        currentStylesheet.setAttribute("href", "style.css"); // Zurück zum ursprünglichen Stylesheet
+    }
+});
