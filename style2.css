@@ -22,10 +22,7 @@ body {
     color: red;
     font-weight: bold;
     font-family: Arial, sans-serif; /* Arial Schriftart */
-    text-shadow: 
-        2px 2px 0px black, 
-        0 0 5px black, 
-        0 0 10px black; /* Starker verschwommener Effekt */
+    text-shadow: 3px 3px 5px black;
     filter: blur(0.8px); /* Teletext-ähnlicher Verschwommeneffekt */
     text-align: center; /* Text zentrieren */
 }
@@ -36,10 +33,7 @@ body {
     color: red;
     font-weight: normal;
     font-family: Arial, sans-serif; /* Arial Schriftart */
-    text-shadow: 
-        2px 2px 0px black, 
-        0 0 5px black, 
-        0 0 10px black; /* Starker verschwommener Effekt */
+    text-shadow: 3px 3px 5px black;
     filter: blur(0.8px); /* Teletext-ähnlicher Verschwommeneffekt */
     text-align: center; /* Text zentrieren */
 }
