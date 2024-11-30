@@ -1,5 +1,12 @@
 /* Allgemeines Styling */
 body {
+    display: flex;
+    justify-content: center; /* Zentriert horizontal */
+    align-items: center; /* Zentriert vertikal */
+    min-height: 100vh; /* Stellt sicher, dass der Inhalt die volle Höhe des Viewports einnimmt */
+    margin: 0; /* Entfernt Standardabstände */
+    text-align: center; /* Zentriert den Text innerhalb von Elementen */
+    flex-direction: column; /* Elemente werden von oben nach unten gestapelt */
     font-family: Arial, sans-serif; /* Arial Schriftart */
     text-align: center; /* Text zentrieren */
     margin: 20px;
@@ -12,13 +19,10 @@ body {
 
 /* Stil für das Datum */
 #date {
-    color: white;
-    font-weight: normal;
+    color: yellow;
+    font-weight: bold;
     font-family: Arial, sans-serif; /* Arial Schriftart */
-    text-shadow: 
-        2px 2px 0px black, 
-        0 0 10px black, 
-        0 0 20px black; /* Starker verschwommener Effekt */
+    text-shadow: 3px 3px 5px black;
     filter: blur(0.8px); /* Teletext-ähnlicher Verschwommeneffekt */
     text-align: center; /* Text zentrieren */
 }
@@ -26,13 +30,10 @@ body {
 
 /* Stil für die Uhrzeit */
 #time {
-    color: white;
+    color: yellow;
     font-weight: normal;
     font-family: Arial, sans-serif; /* Arial Schriftart */
-    text-shadow: 
-        2px 2px 0px black, 
-        0 0 10px black, 
-        0 0 20px black; /* Starker verschwommener Effekt */
+    text-shadow: 3px 3px 5px black;
     filter: blur(0.8px); /* Teletext-ähnlicher Verschwommeneffekt */
     text-align: center; /* Text zentrieren */
 }
@@ -83,28 +84,8 @@ header h1 {
     display: inline-block;
     padding: 30px 50px;
     text-align: center;
-    background: linear-gradient(to right, white 65%, rgb(255, 95, 31) 100%); 
+    background: linear-gradient(to right, white 65%, rgb(255, 0, 255) 100%); 
 }
-
-.style-switcher {
-    font-size: 1rem;
-    font-family: Arial, sans-serif;
-    color: white; /* weiße Schrift */
-    text-shadow: 
-        2px 2px 0px black, 
-        0 0 10px black, 
-        0 0 20px black; /* Starker verschwommener Effekt */
-    filter: blur(1px); /* Teletext-ähnlicher Verschwommeneffekt */
-    text-align: center; /* Zentriert unter dem Titel */
-    cursor: pointer; /* Zeigt Klickbarkeit an */
-    margin-top: 10px; /* Abstand zum Titel */
-   
-}
-
-.style-switcher:hover {
-    color: #0056b3; /* Dunkleres Blau bei Hover */
-}
-
 
 .share-icon {
     display: inline-block; /* Block-Level für bessere Positionierung */
@@ -156,21 +137,6 @@ header h1 {
     text-decoration: none; /* Entfernt die Unterstreichung */
 }
 
-
-/* Stil nur für den Text auf der zweiten Seite */
-.second-page p {
-    font-size: 8px;
-    font-style: italic; /* Kursivschrift */
-    text-align: center;
-    color: white;
-    margin: 100px auto;
-    width: 50%; /* Breite begrenzen */
-    text-align: right; /* Links ausgerichtet */
-    text-shadow: 3px 3px 5px black; /* Schwarzer Schatten */
-    filter: blur(1px);   /* Leicht verschwommen */
-}
-
-
 /* Main-Bereich */
 main {
     font-family: Arial, sans-serif; /* Arial Schriftart */
@@ -196,13 +162,15 @@ main {
 }
 
 .line-main {
-    font-size: 1.8rem;
+    font-family: Arial, sans-serif; /* Arial Schriftart */
+    font-size: 1.6rem;
     font-weight: bold;
     display: block;
     text-shadow: 3px 3px 5px black; /* Schwarzer Schatten */
 }
 
 .line-sub {
+    font-family: Arial, sans-serif; /* Arial Schriftart */
     font-size: 1.6rem;
     font-weight: normal;
     display: block;
@@ -211,11 +179,11 @@ main {
 }
 
 .line-small {
-    font-size: 1rem;
+    font-family: Arial, sans-serif; /* Arial Schriftart */
+    font-size: 1.2rem;
     font-weight: normal;
     display: block;
     margin-top: 3px;
-    color: white; /* Leicht grauer Text */
     text-shadow: 3px 3px 5px black; /* Schwarzer Schatten */
 }
 
