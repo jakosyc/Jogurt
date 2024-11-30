@@ -19,7 +19,7 @@ body {
 
 /* Stil für das Datum */
 #date {
-    color: yellow;
+    color: white;
     font-weight: bold;
     font-family: Arial, sans-serif; /* Arial Schriftart */
     text-shadow: 3px 3px 5px black;
@@ -30,7 +30,7 @@ body {
 
 /* Stil für die Uhrzeit */
 #time {
-    color: yellow;
+    color: white;
     font-weight: normal;
     font-family: Arial, sans-serif; /* Arial Schriftart */
     text-shadow: 3px 3px 5px black;
