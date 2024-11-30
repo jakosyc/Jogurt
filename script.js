@@ -101,11 +101,11 @@ setInterval(updateDateTime, 1000);
 updateDateTime();
 
 // Liste der Stylesheets
-const stylesheets = ["Style.css", "style2.css"];
+const stylesheets = ["style.css", "style2.css"];
 let currentIndex = 0; // Aktuell genutztes Stylesheet
 
-// Funktion zum Wechseln der Stylesheets
-document.getElementById("style-toggle").addEventListener("click", function () {
+// Event Listener für den Text unter dem Titel
+document.getElementById("change-style").addEventListener("click", function () {
     const currentStylesheet = document.getElementById("theme-stylesheet");
 
     // Nächsten Index berechnen
@@ -114,4 +114,3 @@ document.getElementById("style-toggle").addEventListener("click", function () {
     // Neues Stylesheet setzen
     currentStylesheet.setAttribute("href", stylesheets[currentIndex]);
 });
-
