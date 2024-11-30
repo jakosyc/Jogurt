@@ -24,8 +24,8 @@ body {
     font-family: Arial, sans-serif; /* Arial Schriftart */
     text-shadow: 
         2px 2px 0px black, 
-        0 0 10px black, 
-        0 0 20px black; /* Starker verschwommener Effekt */
+        0 0 5px black, 
+        0 0 10px black; /* Starker verschwommener Effekt */
     filter: blur(0.8px); /* Teletext-ähnlicher Verschwommeneffekt */
     text-align: center; /* Text zentrieren */
 }
@@ -38,8 +38,8 @@ body {
     font-family: Arial, sans-serif; /* Arial Schriftart */
     text-shadow: 
         2px 2px 0px black, 
-        0 0 10px black, 
-        0 0 20px black; /* Starker verschwommener Effekt */
+        0 0 5px black, 
+        0 0 10px black; /* Starker verschwommener Effekt */
     filter: blur(0.8px); /* Teletext-ähnlicher Verschwommeneffekt */
     text-align: center; /* Text zentrieren */
 }
