@@ -16,25 +16,6 @@ body {
     filter: blur(0.8px); /* Teletext-ähnlicher Verschwommeneffekt */
 }
 
-/* Stil für die obere Zeile */
-#top-bar {
-    position: fixed !important;
-    background-color: white; /* Schwarzer Hintergrund */
-    font-size: 14px; /* Schriftgröße */
-    padding: 10px 20px; /* Abstand innerhalb der Zeile */
-    display: flex; /* Flexbox für einfache Anordnung */
-    justify-content: space-between; /* Datum links, Uhrzeit rechts */
-    align-items: left; /* Zentrierte Ausrichtung */
-    top: 0; /* Start am oberen Rand */
-    left: 0; /* Start ganz links */
-    width: 100%; /* Vollständige Breite */
-    height: auto; /* Höhe passt sich dem Inhalt an */
-    box-sizing: border-box; /* Beachtet Padding bei der Breitenberechnung */
-    border-bottom: 5px black; /* Optional: Untere Linie für Abgrenzung */
-    z-index: 9999; /* Priorität über anderen Elementen */
-}
-
-
       cursor: url('arschmitfingern.transp.png'), auto; /* Pfad zum Bild */
 }
 
