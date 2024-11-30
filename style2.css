@@ -1,5 +1,12 @@
 /* Allgemeines Styling */
 body {
+    display: flex;
+    justify-content: center; /* Zentriert horizontal */
+    align-items: center; /* Zentriert vertikal */
+    min-height: 100vh; /* Stellt sicher, dass der Inhalt die volle Höhe des Viewports einnimmt */
+    margin: 0; /* Entfernt Standardabstände */
+    text-align: center; /* Zentriert den Text innerhalb von Elementen */
+    flex-direction: column; /* Elemente werden von oben nach unten gestapelt */
     font-family: Arial, sans-serif; /* Arial Schriftart */
     text-align: center; /* Text zentrieren */
     margin: 20px;
