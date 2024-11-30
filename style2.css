@@ -13,10 +13,10 @@ body {
 /* Stil für das Datum */
 #date {
     color: red;
-    font-weight: normal;
+    font-weight: bold;
     font-family: Arial, sans-serif; /* Arial Schriftart */
     text-shadow: 
-        2px 2px 0px black, 
+        1px 1px 0px black, 
         0 0 10px black, 
         0 0 20px black; /* Starker verschwommener Effekt */
     filter: blur(0.8px); /* Teletext-ähnlicher Verschwommeneffekt */
@@ -30,7 +30,7 @@ body {
     font-weight: normal;
     font-family: Arial, sans-serif; /* Arial Schriftart */
     text-shadow: 
-        2px 2px 0px black, 
+        1px 1px 0px black, 
         0 0 10px black, 
         0 0 20px black; /* Starker verschwommener Effekt */
     filter: blur(0.8px); /* Teletext-ähnlicher Verschwommeneffekt */
@@ -83,7 +83,7 @@ header h1 {
     display: inline-block;
     padding: 30px 50px;
     text-align: center;
-    background: linear-gradient(to right, white 65%, rgb(255, 95, 31) 100%); 
+    background: linear-gradient(to right, white 65%, rgb(0, 0, 255) 100%); 
 }
 
 .share-icon {
@@ -164,7 +164,7 @@ main {
     font-size: 1.6rem;
     font-weight: bold;
     display: block;
-    text-shadow: 3px 3px 5px red; /* Schwarzer Schatten */
+    text-shadow: 3px 3px 5px white; /* Schwarzer Schatten */
 }
 
 .line-sub {
@@ -172,7 +172,7 @@ main {
     font-weight: normal;
     display: block;
     margin-top: 5px;
-    text-shadow: 3px 3px 5px red; /* Schwarzer Schatten */
+    text-shadow: 3px 3px 5px white; /* Schwarzer Schatten */
 }
 
 .line-small {
@@ -180,8 +180,8 @@ main {
     font-weight: normal;
     display: block;
     margin-top: 3px;
-    color: white; /* Leicht grauer Text */
-    text-shadow: 3px 3px 5px red; /* Schwarzer Schatten */
+    color: black; /* Leicht grauer Text */
+    text-shadow: 3px 3px 5px white; /* Schwarzer Schatten */
 }
 
 /* Farben für Texte */
