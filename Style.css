@@ -193,8 +193,9 @@ main {
 .green { color: green; }
 .yellow { color: yellow; }
 .purple { color: purple; }
+.orange { color: rgb (255,69,0); }
 
-.red, .blue, .green, .yellow, .purple {
+.red, .blue, .green, .yellow, .purple, .orange {
     text-shadow: 1px 1px 2px black;
 }
 
