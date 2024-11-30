@@ -100,13 +100,18 @@ setInterval(updateDateTime, 1000);
 // Starte die Funktion direkt beim Laden der Seite
 updateDateTime();
 
+// Liste der Stylesheets
+const stylesheets = ["Style.css", "style2.css"];
+let currentIndex = 0; // Aktuell genutztes Stylesheet
+
+// Funktion zum Wechseln der Stylesheets
 document.getElementById("style-toggle").addEventListener("click", function () {
     const currentStylesheet = document.getElementById("theme-stylesheet");
-    
-    // Überprüfe, welches Stylesheet derzeit aktiv ist
-    if (currentStylesheet.getAttribute("href") === "style.css") {
-        currentStylesheet.setAttribute("href", "alternate-style.css"); // Neues Stylesheet
-    } else {
-        currentStylesheet.setAttribute("href", "style.css"); // Zurück zum ursprünglichen Stylesheet
-    }
+
+    // Nächsten Index berechnen
+    currentIndex = (currentIndex + 1) % stylesheets.length;
+
+    // Neues Stylesheet setzen
+    currentStylesheet.setAttribute("href", stylesheets[currentIndex]);
 });
+
