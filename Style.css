@@ -86,6 +86,26 @@ header h1 {
     background: linear-gradient(to right, white 65%, rgb(255, 95, 31) 100%); 
 }
 
+.style-switcher {
+    font-size: 1rem;
+    font-family: Arial, sans-serif;
+    color: white; /* Blaue Schrift */
+    text-shadow: 
+        2px 2px 0px black, 
+        0 0 10px black, 
+        0 0 20px black; /* Starker verschwommener Effekt */
+    filter: blur(1px); /* Teletext-ähnlicher Verschwommeneffekt */
+    text-align: center; /* Zentriert unter dem Titel */
+    cursor: pointer; /* Zeigt Klickbarkeit an */
+    margin-top: 10px; /* Abstand zum Titel */
+   
+}
+
+.style-switcher:hover {
+    color: #0056b3; /* Dunkleres Blau bei Hover */
+}
+
+
 .share-icon {
     display: inline-block; /* Block-Level für bessere Positionierung */
     margin-right: 10px;    /* Abstand rechts */
