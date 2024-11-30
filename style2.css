@@ -16,7 +16,7 @@ body {
     font-weight: bold;
     font-family: Arial, sans-serif; /* Arial Schriftart */
     text-shadow: 
-        1px 1px 0px black, 
+        2px 2px 0px black, 
         0 0 10px black, 
         0 0 20px black; /* Starker verschwommener Effekt */
     filter: blur(0.8px); /* Teletext-ähnlicher Verschwommeneffekt */
@@ -30,7 +30,7 @@ body {
     font-weight: normal;
     font-family: Arial, sans-serif; /* Arial Schriftart */
     text-shadow: 
-        1px 1px 0px black, 
+        2px 2px 0px black, 
         0 0 10px black, 
         0 0 20px black; /* Starker verschwommener Effekt */
     filter: blur(0.8px); /* Teletext-ähnlicher Verschwommeneffekt */
