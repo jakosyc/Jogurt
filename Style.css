@@ -162,7 +162,7 @@ main {
 }
 
 .line-main {
-    font-family: Arial, sans-serif; /* Arial Schriftart */
+    font-family: 'terminal grotesque'; /* Arial Schriftart */
     font-size: 1.6rem;
     font-weight: bold;
     display: block;
