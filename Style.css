@@ -38,6 +38,30 @@ body {
     text-align: center; /* Text zentrieren */
 }
 
+.circle {
+    position: fixed;
+    top: 20px; /* Abstand vom oberen Rand */
+    right: 20px; /* Abstand vom rechten Rand */
+    width: 100px; /* Breite des Kreises */
+    height: 100px; /* Höhe des Kreises (gleich wie Breite für Kreisform) */
+    background-color: white; /* Farbe des Kreises */
+    color: black; /* Textfarbe */
+    border-radius: 50%; /* Runde Kanten für Kreis */
+    display: flex; /* Ermöglicht Zentrierung des Textes */
+    justify-content: center; /* Horizontale Zentrierung des Textes */
+    align-items: center; /* Vertikale Zentrierung des Textes */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3); /* Optional: Schatten für visuelle Tiefe */
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    cursor: pointer; /* Zeigt beim Hover an, dass der Kreis klickbar ist */
+    z-index: 999; /* Überlagert andere Inhalte */
+}
+
+.circle:hover {
+    background-color: #f0f0f0; /* Hellerer Hintergrund bei Hover */
+}
+
 header {
     padding: 20px;
     display: flex;
