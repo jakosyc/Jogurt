@@ -166,6 +166,7 @@ main {
     font-size: 1.6rem;
     font-weight: bold;
     display: block;
+    filter: blur(0.5px); /* Teletext-ähnlicher Verschwommeneffekt */
     text-shadow: 3px 3px 5px black; /* Schwarzer Schatten */
 }
 
@@ -175,6 +176,7 @@ main {
     font-weight: normal;
     display: block;
     margin-top: 5px;
+    filter: blur(0.5px); /* Teletext-ähnlicher Verschwommeneffekt */
     text-shadow: 3px 3px 5px black; /* Schwarzer Schatten */
 }
 
@@ -184,6 +186,7 @@ main {
     font-weight: normal;
     display: block;
     margin-top: 3px;
+    filter: blur(0.5px); /* Teletext-ähnlicher Verschwommeneffekt */
     text-shadow: 3px 3px 5px black; /* Schwarzer Schatten */
 }
 
