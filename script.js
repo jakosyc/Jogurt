@@ -100,18 +100,12 @@ setInterval(updateDateTime, 1000);
 // Starte die Funktion direkt beim Laden der Seite
 updateDateTime();
 
-// Liste der Stylesheets
-const stylesheets = ["Style.css", "style2.css"];
-let currentIndex = 0; // Aktuell genutztes Stylesheet
+<script>
+    const stylesheets = ["style.css", "style2.css"]; // Liste der Stylesheets
+    let currentStylesheetIndex = 0;
 
-// Funktion zum Wechseln der Stylesheets
-document.getElementById("style-toggle").addEventListener("click", function () {
-    const currentStylesheet = document.getElementById("theme-stylesheet");
-
-    // Nächsten Index berechnen
-    currentIndex = (currentIndex + 1) % stylesheets.length;
-
-    // Neues Stylesheet setzen
-    currentStylesheet.setAttribute("href", stylesheets[currentIndex]);
-});
-
+    document.getElementById("style-switcher").addEventListener("click", () => {
+        currentStylesheetIndex = (currentStylesheetIndex + 1) % stylesheets.length; // Wechsel zwischen Stylesheets
+        document.getElementById("theme-stylesheet").setAttribute("href", stylesheets[currentStylesheetIndex]);
+    });
+</script>
