@@ -187,7 +187,7 @@ main {
 }
 
 .line-main {
-    font-family: 'terminal grotesque'; /* Arial Schriftart */
+    font-family: 'terminal grotesque'; 
     font-size: 1.6rem;
     font-weight: bold;
     display: block;
@@ -196,7 +196,7 @@ main {
 }
 
 .line-sub {
-    font-family: 'terminal grotesque'; /* Arial Schriftart */
+    font-family: 'terminal grotesque'; 
     font-size: 1.6rem;
     font-weight: normal;
     display: block;
@@ -206,7 +206,7 @@ main {
 }
 
 .line-small {
-    font-family: 'terminal grotesque'; /* Arial Schriftart */
+    font-family: 'terminal grotesque'; 
     font-size: 1.2rem;
     font-weight: normal;
     display: block;
