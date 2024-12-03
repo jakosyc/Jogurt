@@ -333,11 +333,6 @@ main {
 }
 
 @media (max-width: 780px) {
-    @font-face {
-    font-family: 'terminal grotesque'; /* Name der Schriftart */
-    src: url('fonts/terminal-grotesque-webfont.woff2') format('woff2'), /* Moderne Browser */
-    font-weight: normal; /* Optional: Gewicht der Schriftart */
-    font-style: normal;  /* Optional: Stil der Schriftart */
        }  
     
     header {
@@ -359,7 +354,7 @@ main {
     }
 
     #editable-list li {
-        font-family: 'terminal grotesque'; /* Name der Schriftart */
+        font-family: Arial; /* Name der Schriftart */
         font-size: 1rem;
         margin: 15px 0;
         align-items: center;
