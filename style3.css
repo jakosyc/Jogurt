@@ -140,7 +140,7 @@ header h1 {
     text-shadow: 3px 3px 5px black; /* Schwarzer Schatten */
     text-align: center; /* Zentrierter Text */
     margin: 100px 0; /* Abstand oben und unten */
-    padding: 770px; /* Innerer Abstand */
+    padding: 54px; /* Innerer Abstand */
     width: 90%; /* Breite auf den gesamten Bildschirm ausdehnen */
     text-decoration: none; /* Entfernt die Unterstreichung */
 }
