@@ -91,7 +91,7 @@ header h1 {
     font-family: Arial, sans-serif; /* Arial Schriftart */
     font-size: 3rem;
     font-weight: bold;
-    color: yellow; /* Gelbe Schrift */
+    color: blue; /* Gelbe Schrift */
     text-shadow: 
         2px 2px 0px black, 
         0 0 10px black, 
@@ -220,7 +220,7 @@ main {
     font-size:1.4rem;
     font-family: Arial, sans-serif; /* Arial Schriftart */
     font-weight: bold;
-    color: yellow; /* Gelbe Schrift */
+    color: blue; /* Gelbe Schrift */
     text-shadow: 
         2px 2px 0px black, 
         0 0 10px black, 
