@@ -326,6 +326,8 @@ main {
 @font-face {
     font-family: 'terminal grotesque'; /* Name der Schriftart */
     src: url('fonts/terminal-grotesque-webfont.woff2') format('woff2'), /* Moderne Browser */
+         url('fonts/terminal-grotesque-webfont.woff') format('woff'), /* Moderne Browser */
+         url('fonts/terminal-grotesque-webfont.ttf') format('ttf'), /* Moderne Browser */
     font-weight: normal; /* Optional: Gewicht der Schriftart */
     font-style: normal;  /* Optional: Stil der Schriftart */
 }
