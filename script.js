@@ -99,12 +99,3 @@ setInterval(updateDateTime, 1000);
 
 // Starte die Funktion direkt beim Laden der Seite
 updateDateTime();
-
-const stylesheets = ["style.css", "style2.css"]; // Liste der Stylesheets
-let currentStylesheetIndex = 0;
-
-document.getElementById("style-switcher").addEventListener("click", () => {
-    currentStylesheetIndex = (currentStylesheetIndex + 1) % stylesheets.length; // Wechsel zwischen Stylesheets
-    console.log("Stylesheet wechseln zu:", stylesheets[currentStylesheetIndex]); // Debugging-Ausgabe
-    document.getElementById("theme-stylesheet").setAttribute("href", stylesheets[currentStylesheetIndex]);
-});
