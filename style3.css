@@ -1,0 +1,372 @@
+/* Allgemeines Styling */
+body {
+    display: flex;
+    justify-content: center; /* Zentriert horizontal */
+    align-items: center; /* Zentriert vertikal */
+    min-height: 100vh; /* Stellt sicher, dass der Inhalt die volle Höhe des Viewports einnimmt */
+    margin: 0; /* Entfernt Standardabstände */
+    text-align: center; /* Zentriert den Text innerhalb von Elementen */
+    flex-direction: column; /* Elemente werden von oben nach unten gestapelt */
+    font-family: Arial, sans-serif; /* Arial Schriftart */
+    text-align: center; /* Text zentrieren */
+    margin: 20px;
+    padding: 0;
+    background-color: rgb(220,25,57); ; /* RGB-Blau für den gesamten Hintergrund */
+    overflow-x: hidden; /* Verhindert horizontales Scrollen, ohne vertikales zu blockieren */
+    overflow-y: auto;   /* Ermöglicht vertikales Scrollen */
+    box-sizing: border-box; /* Berücksichtigt Rahmen und Padding in der Breite */ 
+}
+
+/* Stil für das Datum */
+#date {
+    color: white;
+    font-weight: bold;
+    font-family: Arial, sans-serif; /* Arial Schriftart */
+    text-shadow: 3px 3px 5px black;
+    filter: blur(0.8px); /* Teletext-ähnlicher Verschwommeneffekt */
+    text-align: center; /* Text zentrieren */
+}
+
+
+/* Stil für die Uhrzeit */
+#time {
+    color: white;
+    font-weight: normal;
+    font-family: Arial, sans-serif; /* Arial Schriftart */
+    text-shadow: 3px 3px 5px black;
+    filter: blur(0.8px); /* Teletext-ähnlicher Verschwommeneffekt */
+    text-align: center; /* Text zentrieren */
+}
+
+.circle {
+    position: fixed;
+    top: 20px; /* Abstand vom oberen Rand */
+    right: 20px; /* Abstand vom rechten Rand */
+    width: 50px; /* Breite des Kreises */
+    height: 50px; /* Höhe des Kreises (gleich wie Breite für Kreisform) */
+    background-color: white; /* Farbe des Kreises */
+    color: black; /* Textfarbe */
+    border-radius: 50%; /* Runde Kanten für Kreis */
+    display: flex; /* Ermöglicht Zentrierung des Textes */
+    justify-content: center; /* Horizontale Zentrierung des Textes */
+    align-items: center; /* Vertikale Zentrierung des Textes */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3); /* Optional: Schatten für visuelle Tiefe */
+    font-family: Arial, sans-serif;
+    filter: blur(0.4px); /* Teletext-ähnlicher Verschwommeneffekt */
+    font-size: 6px;
+    font-weight: bold;
+    cursor: pointer; /* Zeigt beim Hover an, dass der Kreis klickbar ist */
+    z-index: 999; /* Überlagert andere Inhalte */
+}
+
+.circle:hover {
+    background-color: #f0f0f0; /* Hellerer Hintergrund bei Hover */
+}
+
+header {
+    padding: 20px;
+    display: flex;
+    align-items: center; /* Inhalte horizontal zentrieren */
+    justify-content: center;
+    text-align: center; /* Text zentrieren */
+    max-width: 100%; /* Begrenze die Breite auf den sichtbaren Bereich */
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap; /* Elemente umbrechen */
+    text-align: center;
+}
+
+.title-image {
+    width: 130px; /* Größe des kleinen Bildes */
+    height: 130px;
+    margin-right: 20px; /* Abstand zwischen Bild und Titel */
+    filter: blur(0.5px);
+}
+
+
+header h1 {
+    font-family: Arial, sans-serif; /* Arial Schriftart */
+    font-size: 3rem;
+    font-weight: bold;
+    color: yellow; /* Gelbe Schrift */
+    text-shadow: 
+        2px 2px 0px black, 
+        0 0 10px black, 
+        0 0 20px black; /* Starker verschwommener Effekt */
+    filter: blur(1px); /* Teletext-ähnlicher Verschwommeneffekt */
+    letter-spacing: 2px; /* Verpixelter Look */
+    position: relative;
+    padding: 10px 40px;
+    display: inline-block;
+}
+
+.oval-title {
+    border: 5px solid black; /* Schwarzes Oval */
+    border-radius: 50%; /* Ovalform */
+    display: inline-block;
+    padding: 30px 50px;
+    text-align: center;
+    background: linear-gradient(to right, white 65%, rgb(255, 69, 0) 100%); 
+}
+
+.share-icon {
+    display: inline-block; /* Block-Level für bessere Positionierung */
+    margin-right: 10px;    /* Abstand rechts */
+    cursor: pointer;       /* Zeigt an, dass es anklickbar ist */
+    font-weight: bold;     /* Fett für bessere Lesbarkeit */
+    font-size: 30px;       /* Schriftgröße */
+    color: yellow;         /* Gelbe Schrift */
+    text-shadow: 3px 3px 5px black; /* Schwarzer Schatten */
+    filter: blur(1px);   /* Leicht verschwommen */
+    transition: transform 0.2s ease-in-out; /* Animation bei Hover */
+}
+
+/* Standard-Styling der Liste */
+#editable-list li {
+    margin: 15px 0;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Hover-Effekt für das Teilen-Symbol */
+.share-icon:hover {
+    transform: scale(10); /* Vergrößert das Symbol beim Hover */
+    
+}
+
+/* Optisches Feedback für hervorgehobenen Listenpunkt */
+#editable-list li[style] {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Leichter Schatten */
+}
+
+/* Styling für den Footer-Link */
+.footer-link {
+    font-family: Arial, sans-serif; /* Arial Schriftart */
+    font-weight: normal; /* Kein fetter Text */
+    font-size: 1rem; /* Standard-Schriftgröße */
+    color: white; /* Weißer Text */
+    filter: blur(1px); /* Teletext-ähnlicher Verschwommeneffekt */
+    text-shadow: 3px 3px 5px black; /* Schwarzer Schatten */
+    text-align: center; /* Zentrierter Text */
+    margin: 20px 0; /* Abstand oben und unten */
+    padding: 10px; /* Innerer Abstand */
+    width: 100%; /* Breite auf den gesamten Bildschirm ausdehnen */
+    text-decoration: none; /* Entfernt die Unterstreichung */
+}
+
+.footer-link:hover {
+    color: yellow; /* Farbe bei Hover */
+    text-decoration: none; /* Entfernt die Unterstreichung */
+}
+
+/* Main-Bereich */
+main {
+    font-family: helvetica; /* Arial Schriftart */
+    text-align: center;
+    padding: 0px;
+}
+
+#editable-list {
+    list-style: none;
+    padding: 0;
+    margin: 17px auto;
+    max-width: 80%; /* Verhindert Überlauf auf kleinen Geräten */
+}
+
+#editable-list li {
+    font-size: 1.8rem;
+    font-weight: bold; /* Arial Bold */
+    color: white; /* Weiße Schrift */
+    margin: 20px 0;
+    position: relative;
+    letter-spacing: 2px; /* Verpixelter Look */
+    text-align: center; /* Zentrierte Liste */
+}
+
+.line-main {
+    font-family: 'terminal grotesque'; 
+    font-size: 1.6rem;
+    font-weight: bold;
+    display: block;
+    filter: blur(0.5px); /* Teletext-ähnlicher Verschwommeneffekt */
+    text-shadow: 3px 3px 5px black; /* Schwarzer Schatten */
+}
+
+.line-sub {
+    font-family: 'terminal grotesque'; 
+    font-size: 1.6rem;
+    font-weight: normal;
+    display: block;
+    margin-top: 5px;
+    filter: blur(0.5px); /* Teletext-ähnlicher Verschwommeneffekt */
+    text-shadow: 3px 3px 5px black; /* Schwarzer Schatten */
+}
+
+.line-small {
+    font-family: 'terminal grotesque'; 
+    font-size: 1.2rem;
+    font-weight: normal;
+    display: block;
+    margin-top: 3px;
+    filter: blur(0.5px); /* Teletext-ähnlicher Verschwommeneffekt */
+    text-shadow: 3px 3px 5px black; /* Schwarzer Schatten */
+}
+
+/* Farben für Texte */
+.red { color: red; }
+.blue { color: blue; }
+.green { color: green; }
+.yellow { color: yellow; }
+.purple { color: purple; }
+.orange { color: rgb (255,69,0); }
+
+.red, .blue, .green, .yellow, .purple, .orange {
+    text-shadow: 1px 1px 2px black;
+}
+
+/* Untertitel */
+.sub-title {
+    font-size:1.4rem;
+    font-family: Arial, sans-serif; /* Arial Schriftart */
+    font-weight: bold;
+    color: yellow; /* Gelbe Schrift */
+    text-shadow: 
+        2px 2px 0px black, 
+        0 0 10px black, 
+        0 0 20px black; /* Starker verschwommener Effekt */
+    filter: blur(1px); /* Teletext-ähnlicher Verschwommeneffekt */
+    letter-spacing: 2px; /* Verpixelter Look */
+    text-align: center;
+    margin-top: 80px; /* Vierfacher Abstand */
+
+    border: 3px solid black; /* Schwarzer Rahmen */
+    border-radius: 0px; /* Optionale Abrundung der Ecken */
+    padding: 20px; /* Abstand zwischen Text und Rahmen */
+    display: inline-block; /* Passt die Breite des Rahmens an den Inhalt an */
+    background-color: rgb(255,255,255); /* Halbtransparenter Hintergrund (optional) */
+
+}
+
+/* Wenn der Untertitel angeklickt wird, soll er zittern */
+.sub-title.shake {
+    animation: shake 0.5s ease-in-out; /* Dauer der Animation */
+}
+
+/* Footer-Bild */
+.footer-container {
+    overflow: hidden; /* Bild bleibt im Container */
+    position: relative;
+    width: 100%;
+    height: 200px;
+    margin-top: 20px;
+}
+
+.footer-bild {
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    filter: blur(1px); /* Teletext-ähnlicher Verschwommeneffekt */
+    transform: translate(-50%, -50%);
+    height: 100px;
+    animation: moveAndRotate 50s linear infinite;
+}
+
+.footer-text {
+    font-family: Arial, sans-serif; /* Arial Schriftart */
+    font-weight: normal; /* Kein fetter Text */
+    font-size: 1rem; /* Standard-Schriftgröße */
+    color: white; /* Weißer Text */
+    filter: blur(1px); /* Teletext-ähnlicher Verschwommeneffekt */
+    text-shadow: 3px 3px 5px black; /* Schwarzer Schatten */
+    text-align: center; /* Zentrierter Text */
+    margin: 20px 0; /* Abstand oben und unten */
+    padding: 10px; /* Innerer Abstand */
+    width: 100%; /* Breite auf den gesamten Bildschirm ausdehnen */
+}
+
+/* Animationen */
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+/* Definiere die Zittern-Animation */
+@keyframes shake {
+    0% { transform: translateX(0); }
+    10% { transform: translateX(-5px); }
+    20% { transform: translateX(5px); }
+    30% { transform: translateX(-5px); }
+    40% { transform: translateX(5px); }
+    50% { transform: translateX(-5px); }
+    60% { transform: translateX(5px); }
+    70% { transform: translateX(-5px); }
+    80% { transform: translateX(5px); }
+    90% { transform: translateX(-5px); }
+    100% { transform: translateX(5px); }
+}
+
+@keyframes moveAndRotate {
+    0% {
+        left: 100%;
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    100% {
+        left: -100%;
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+
+@font-face {
+    font-family: 'terminal grotesque'; /* Name der Schriftart */
+    src: url('fonts/terminal-grotesque-webfont.woff2') format('woff2'), /* Moderne Browser */
+         url('fonts/terminal-grotesque-webfont.woff') format('woff'),
+         url('fonts/terminal-grotesque-webfont.ttf') format('ttf');
+    font-weight: normal; /* Optional: Gewicht der Schriftart */
+    font-style: normal;  /* Optional: Stil der Schriftart */
+}
+
+@media (max-width: 780px) {
+       }  
+    
+    header {
+        flex-direction: column; /* Inhalte vertikal anordnen */
+        overflow-x: hidden; /* Verhindert horizontales Scrollen */
+        width: 100%; /* Passe die Breite des Ovals an */
+        align-items: center;
+    }
+
+    .title-image {
+        margin-bottom: 10px;
+        align-items: center;
+    }
+
+    header h1 {
+        font-size: 2rem;
+        padding: 15px;
+        align-items: center;
+    }
+
+    #editable-list li {
+        font-family: Helvetica; /* Name der Schriftart */
+        font-size: 1rem;
+        margin: 15px 0;
+        align-items: center;
+    }
+
+    .sub-title {
+        font-size: 1.5rem;
+        padding: 10px;
+        align-items: center;
+    }
+
+    .footer-bild {
+        height: 80px; /* Bildgröße verkleinern */
+    }
+}
