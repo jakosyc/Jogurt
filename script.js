@@ -1,111 +1,68 @@
-// Funktion zum Teilen eines Listenpunkts
-function shareEvent(event) {
-    const shareIcon = event.target;
-    const id = shareIcon.parentElement.id; // Die ID des Listenpunkts
-    const title = shareIcon.getAttribute('data-title'); // Titel des Events
-    const text = shareIcon.getAttribute('data-text'); // Text des Events
-    const url = `${window.location.origin}${window.location.pathname}?event=${id}`; // URL mit Query-Parameter
+// Datum und Uhrzeit aktualisieren
+function updateDateTime() {
+    const now = new Date();
+    const dateElement = document.getElementById('current-date');
+    const timeElement = document.getElementById('current-time');
 
-    if (navigator.share) {
-        // Web Share API (für moderne Browser)
-        navigator.share({
-            title: title,
-            text: text,
-            url: url,
-        })
-            .then(() => {
-                console.log('Event erfolgreich geteilt.');
-            })
-            .catch((error) => {
-                console.error('Fehler beim Teilen:', error);
-            });
-    } else {
-        // Fallback: Link in Zwischenablage kopieren
-        const shareText = `${text} - Link: ${url}`;
-        navigator.clipboard
-            .writeText(shareText)
-            .then(() => {
-                alert('Link wurde kopiert. Teile ihn jetzt manuell!');
-            })
-            .catch((error) => {
-                console.error('Fehler beim Kopieren des Links:', error);
-            });
-    }
+    // Datum und Uhrzeit formatieren
+    const options = { day: '2-digit', month: '2-digit', year: 'numeric' };
+    const formattedDate = now.toLocaleDateString('de-DE', options);
+    const formattedTime = now.toLocaleTimeString('de-DE', { hour: '2-digit', minute: '2-digit' });
+
+    // In die Elemente einfügen
+    dateElement.textContent = formattedDate;
+    timeElement.textContent = formattedTime;
 }
 
-// Funktion zum Hervorheben des Listenpunkts basierend auf dem Query-Parameter
-function highlightEventFromQuery() {
-    const urlParams = new URLSearchParams(window.location.search);
-    const eventId = urlParams.get('event'); // Query-Parameter "event"
-    if (eventId) {
-        const targetElement = document.getElementById(eventId);
-        if (targetElement) {
-            // Listenpunkt hervorheben
-            targetElement.style.border = '1px dotted black';
-            targetElement.style.transition = 'background-color 0.5s ease';
+// Datum und Uhrzeit bei Start laden und jede Sekunde aktualisieren
+updateDateTime();
+setInterval(updateDateTime, 1000);
 
-            // Scrollt den Listenpunkt in die Mitte des Bildschirms
-            targetElement.scrollIntoView({ behavior: 'smooth', block: 'center' });
+// Stylesheet wechseln
+let currentStylesheet = "style.css"; // Standardstylesheet
+function switchStylesheet() {
+    const stylesheetLink = document.getElementById('stylesheet');
+    currentStylesheet = currentStylesheet === "style.css" ? "alternate.css" : "style.css";
+    stylesheetLink.href = currentStylesheet;
+}
+
+// Event-Listener für das "Better Colours"-Element
+document.querySelector('.color-switcher').addEventListener('click', switchStylesheet);
+
+// Event-Listener für den Text unter dem Oval-Titel
+document.querySelector('.change-style').addEventListener('click', switchStylesheet);
+
+// Highlight-Funktion für geteilte Listenpunkte
+function highlightSharedEvent() {
+    const urlParams = new URLSearchParams(window.location.search);
+    const sharedEventId = urlParams.get('event');
+    if (sharedEventId) {
+        const sharedElement = document.getElementById(sharedEventId);
+        if (sharedElement) {
+            sharedElement.style.border = '4px dotted yellow';
+            sharedElement.style.transform = 'scale(1.1)';
         }
     }
 }
 
-// Eventlistener für alle Teilen-Symbole hinzufügen
-document.querySelectorAll('.share-icon').forEach((icon) => {
-    icon.addEventListener('click', shareEvent); // Klick-Event für das Teilen
-});
-
-// Query-Parameter beim Laden der Seite auswerten
-window.addEventListener('DOMContentLoaded', highlightEventFromQuery);
-
-document.querySelector('.sub-title').addEventListener('click', function() {
-    // Füge die "shake"-Klasse hinzu
-    this.classList.add('shake');
-
-    // Entferne die "shake"-Klasse nach der Animation, um sie für den nächsten Klick wiederverwendbar zu machen
-    setTimeout(() => {
-        this.classList.remove('shake');
-    }, 500); // Entspricht der Dauer der Animation (in ms)
-});
-
-// Funktion zur Aktualisierung von Datum und Uhrzeit
-function updateDateTime() {
-    const dateElement = document.getElementById('date');
-    const timeElement = document.getElementById('time');
-
-    const now = new Date();
-
-    // Format für das Datum (z. B. "29.11.2024")
-    const dateString = now.toLocaleDateString('de-DE', {
-        day: '2-digit',
-        month: '2-digit',
-        year: 'numeric',
+// Event teilen
+function shareEvent(eventId) {
+    const url = `${window.location.origin}${window.location.pathname}?event=${eventId}`;
+    navigator.clipboard.writeText(url).then(() => {
+        alert("Link zum Teilen wurde in die Zwischenablage kopiert!");
     });
-
-    // Format für die Uhrzeit (z. B. "14:35:08")
-    const timeString = now.toLocaleTimeString('de-DE', {
-        hour: '2-digit',
-        minute: '2-digit',
-        second: '2-digit',
-    });
-
-    // Setze den Textinhalt der Elemente
-    dateElement.textContent = dateString;
-    timeElement.textContent = timeString;
 }
 
-// Aktualisiere Datum und Uhrzeit jede Sekunde
-setInterval(updateDateTime, 1000);
+// Event-Listener für Share-Icons
+document.querySelectorAll('.share-icon').forEach((icon, index) => {
+    const eventId = `event-${index + 1}`; // Dynamische ID für jeden Listenpunkt
+    icon.addEventListener('click', () => shareEvent(eventId));
+    icon.parentElement.id = eventId; // ID auf Listenpunkt setzen
+});
 
-// Starte die Funktion direkt beim Laden der Seite
-updateDateTime();
-
-<script>
-    const stylesheets = ["style.css", "style2.css"]; // Liste der Stylesheets
-    let currentStylesheetIndex = 0;
-
-    document.getElementById("style-switcher").addEventListener("click", () => {
-        currentStylesheetIndex = (currentStylesheetIndex + 1) % stylesheets.length; // Wechsel zwischen Stylesheets
-        document.getElementById("theme-stylesheet").setAttribute("href", stylesheets[currentStylesheetIndex]);
-    });
-</script>
+// Zitter-Animation beim Sub-Title
+document.querySelector('.sub-title').addEventListener('click', () => {
+    const subTitle = document.querySelector('.sub-title');
+    subTitle.classList.add('shake');
+    setTimeout(() => subTitle.classList.remove('shake'), 500);
+});
