@@ -100,12 +100,28 @@ setInterval(updateDateTime, 1000);
 // Starte die Funktion direkt beim Laden der Seite
 updateDateTime();
 
-const stylesheets = ["style.css", "style2.css"]; // Liste der Stylesheets
-let currentStylesheetIndex = 0;
+// Liste der Stylesheets
+const stylesheets = ["Style.css", "style2.css"];
+let currentStylesheetIndex = 0; // Aktueller Index
 
-document.getElementById("style-switcher").addEventListener("click", () => {
-    currentStylesheetIndex = (currentStylesheetIndex + 1) % stylesheets.length; // Wechsel zwischen Stylesheets
-    console.log("Stylesheet wechseln zu:", stylesheets[currentStylesheetIndex]); // Debugging-Ausgabe
-    document.getElementById("theme-stylesheet").setAttribute("href", stylesheets[currentStylesheetIndex]);
+// Funktion zum Wechseln des Stylesheets
+function switchStylesheet() {
+    currentStylesheetIndex = (currentStylesheetIndex + 1) % stylesheets.length; // Zyklischer Wechsel
+    const newStylesheet = stylesheets[currentStylesheetIndex]; // Neues Stylesheet
+    const themeStylesheet = document.getElementById("theme-stylesheet"); // Link-Tag
+
+    // Aktualisiere das "href"-Attribut
+    themeStylesheet.setAttribute("href", newStylesheet);
+    console.log(`Stylesheet gewechselt zu: ${newStylesheet}`); // Debug-Ausgabe
+}
+
+// Eventlistener für den Style-Switcher
+document.addEventListener("DOMContentLoaded", () => {
+    const styleSwitcher = document.getElementById("style-switcher");
+    if (styleSwitcher) {
+        styleSwitcher.addEventListener("click", switchStylesheet); // Klick-Event hinzufügen
+    } else {
+        console.error("Style-Switcher-Element nicht gefunden.");
+    }
 });
 
