@@ -7,27 +7,29 @@
     <link rel="stylesheet" href="Style.css">
 </head>
 	
-<body>
+   <body>
 
     <div id="top-bar">
     	<span id="date"></span>
     	<span id="time"></span>
     </div>
+	
+</body>
 
-	<div id="style-switcher" class="circle">
-        <span>Better Colours</span>
+     <div id="style-switcher" class="circle">
+    		<span>Better Colours</span>
     </div>
-       
-    <script>
+
+	<script>
         const stylesheets = ["Style.css", "style2.css"]; // Liste der Stylesheets
         let currentStylesheetIndex = 0;
 
         document.getElementById("style-switcher").addEventListener("click", () => {
             currentStylesheetIndex = (currentStylesheetIndex + 1) % stylesheets.length; // Wechsel zwischen Stylesheets
+            console.log("Stylesheet wechseln zu:", stylesheets[currentStylesheetIndex]); // Debugging-Ausgabe
             document.getElementById("theme-stylesheet").setAttribute("href", stylesheets[currentStylesheetIndex]);
         });
     </script>
-     
 	
     <header>
 	<img src="nebenbild.png" alt="Kleines Bild" class="title-image">
