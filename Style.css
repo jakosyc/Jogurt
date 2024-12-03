@@ -172,15 +172,15 @@ main {
 #editable-list {
     list-style: none;
     padding: 0;
-    margin: 20px auto;
-    max-width: 90%; /* Verhindert Überlauf auf kleinen Geräten */
+    margin: 17px auto;
+    max-width: 80%; /* Verhindert Überlauf auf kleinen Geräten */
 }
 
 #editable-list li {
     font-size: 1.8rem;
     font-weight: bold; /* Arial Bold */
     color: white; /* Weiße Schrift */
-    margin: 25px 0;
+    margin: 20px 0;
     position: relative;
     letter-spacing: 2px; /* Verpixelter Look */
     text-align: center; /* Zentrierte Liste */
