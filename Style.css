@@ -332,7 +332,7 @@ main {
     font-style: normal;  /* Optional: Stil der Schriftart */
 }
 
-@media (max-width: 780px) {
+@media (max-width: 750px) {
        }  
     
     header {
