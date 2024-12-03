@@ -13,11 +13,26 @@
     	<span id="date"></span>
     	<span id="time"></span>
     </div>
+
+
+    <div id="style-switcher" class="circle">
+        <span>Better Colours</span>
+    </div>
+
+    <div id="style-switcher" class="circle">Better Colour</div>
+       
+    <script>
+        const stylesheets = ["Style.css", "style2.css"]; // Liste der Stylesheets
+        let currentStylesheetIndex = 0;
+
+        document.getElementById("style-switcher").addEventListener("click", () => {
+            currentStylesheetIndex = (currentStylesheetIndex + 1) % stylesheets.length; // Wechsel zwischen Stylesheets
+            document.getElementById("theme-stylesheet").setAttribute("href", stylesheets[currentStylesheetIndex]);
+        });
+    </script>
 	
 </body>
      
-	<div id="style-switcher" class="circle">Better Colour</div>
-        </div>
 	
     <header>
 	<img src="nebenbild.png" alt="Kleines Bild" class="title-image">
