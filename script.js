@@ -100,33 +100,12 @@ setInterval(updateDateTime, 1000);
 // Starte die Funktion direkt beim Laden der Seite
 updateDateTime();
 
-// Standard-Stylesheet
-let currentStylesheet = "style.css"; // Standardstylesheet
+const stylesheets = ["style.css", "style2.css"]; // Liste der Stylesheets
+let currentStylesheetIndex = 0;
 
-// Funktion zum Wechseln des Stylesheets
-function switchStylesheet() {
-    const stylesheetLink = document.getElementById('stylesheet');
-    
-    // Überprüfen, ob das Link-Element vorhanden ist
-    if (stylesheetLink) {
-        // Wechsel zwischen Standard- und alternativen Stylesheet
-        currentStylesheet = currentStylesheet === "style.css" ? "style2.css" : "style.css";
-        stylesheetLink.href = currentStylesheet;
-        console.log(`Stylesheet gewechselt zu: ${currentStylesheet}`);
-    } else {
-        console.error("Stylesheet-Link mit ID 'stylesheet' wurde nicht gefunden.");
-    }
-}
-
-// Hinzufügen eines Event-Listeners zum "Better Colours"-Button
-document.addEventListener("DOMContentLoaded", () => {
-    const switcherButton = document.querySelector('.color-switcher');
-
-    // Überprüfen, ob der Button existiert
-    if (switcherButton) {
-        switcherButton.addEventListener('click', switchStylesheet);
-        console.log("Event-Listener für Stylesheet-Wechsel hinzugefügt.");
-    } else {
-        console.error("Element mit Klasse 'color-switcher' wurde nicht gefunden.");
-    }
+document.getElementById("style-switcher").addEventListener("click", () => {
+    currentStylesheetIndex = (currentStylesheetIndex + 1) % stylesheets.length; // Wechsel zwischen Stylesheets
+    console.log("Stylesheet wechseln zu:", stylesheets[currentStylesheetIndex]); // Debugging-Ausgabe
+    document.getElementById("theme-stylesheet").setAttribute("href", stylesheets[currentStylesheetIndex]);
 });
+
