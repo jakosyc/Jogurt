@@ -109,19 +109,7 @@ header h1 {
     display: inline-block;
     padding: 30px 50px;
     text-align: center;
-    background: linear-gradient(to right, white 65%, rgb(255, 69, 0) 100%); 
-}
-
-.share-icon {
-    display: inline-block; /* Block-Level für bessere Positionierung */
-    margin-right: 10px;    /* Abstand rechts */
-    cursor: pointer;       /* Zeigt an, dass es anklickbar ist */
-    font-weight: bold;     /* Fett für bessere Lesbarkeit */
-    font-size: 30px;       /* Schriftgröße */
-    color: yellow;         /* Gelbe Schrift */
-    text-shadow: 3px 3px 5px black; /* Schwarzer Schatten */
-    filter: blur(1px);   /* Leicht verschwommen */
-    transition: transform 0.2s ease-in-out; /* Animation bei Hover */
+    background: linear-gradient(to right, white 65%, rgb(55, 16, 242) 100%); 
 }
 
 /* Standard-Styling der Liste */
@@ -147,13 +135,13 @@ header h1 {
     font-family: Arial, sans-serif; /* Arial Schriftart */
     font-weight: normal; /* Kein fetter Text */
     font-size: 1rem; /* Standard-Schriftgröße */
-    color: white; /* Weißer Text */
+    color: orange; /* Weißer Text */
     filter: blur(1px); /* Teletext-ähnlicher Verschwommeneffekt */
     text-shadow: 3px 3px 5px black; /* Schwarzer Schatten */
     text-align: center; /* Zentrierter Text */
-    margin: 20px 0; /* Abstand oben und unten */
-    padding: 10px; /* Innerer Abstand */
-    width: 100%; /* Breite auf den gesamten Bildschirm ausdehnen */
+    margin: 40px 0; /* Abstand oben und unten */
+    padding: 30px; /* Innerer Abstand */
+    width: 50%; /* Breite auf den gesamten Bildschirm ausdehnen */
     text-decoration: none; /* Entfernt die Unterstreichung */
 }
 
