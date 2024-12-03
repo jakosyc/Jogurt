@@ -139,9 +139,9 @@ header h1 {
     filter: blur(1px); /* Teletext-ähnlicher Verschwommeneffekt */
     text-shadow: 3px 3px 5px black; /* Schwarzer Schatten */
     text-align: center; /* Zentrierter Text */
-    margin: 40px 0; /* Abstand oben und unten */
-    padding: 30px; /* Innerer Abstand */
-    width: 50%; /* Breite auf den gesamten Bildschirm ausdehnen */
+    margin: 100px 0; /* Abstand oben und unten */
+    padding: 770px; /* Innerer Abstand */
+    width: 90%; /* Breite auf den gesamten Bildschirm ausdehnen */
     text-decoration: none; /* Entfernt die Unterstreichung */
 }
 
