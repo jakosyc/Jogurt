@@ -300,9 +300,8 @@ main {
     }
 
     #editable-list li {
-        font-family: Helvetica; /* Name der Schriftart */
         font-size: 0.5rem;
-        margin: 15px 0;
+        margin: 10px 0;
         align-items: center;
     }
 
