@@ -112,22 +112,33 @@ header h1 {
     background: linear-gradient(to right, white 65%, rgb(55, 16, 242) 100%); 
 }
 
-/* Standard-Styling der Liste */
-#editable-list li {
-    margin: 15px 0;
-    padding: 10px;
+/* Styling für die Liste */
+.clickable-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 0;
+    width: 80%; /* Liste auf 80% des Bildschirms beschränken */
+}
+
+.clickable-list li {
+    margin: 10px 0;
+    background-color: #ffffff;
+    border: 2px solid #000080; /* Dunkelblauer Rand */
     border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+    transition: transform 0.2s, background-color 0.2s;
 }
 
-/* Hover-Effekt für das Teilen-Symbol */
-.share-icon:hover {
-    transform: scale(10); /* Vergrößert das Symbol beim Hover */
-    
+.clickable-list li:hover {
+    background-color: #add8e6; /* Helles Blau beim Hover */
+    transform: scale(1.05); /* Leichtes Vergrößern beim Hover */
 }
 
-/* Optisches Feedback für hervorgehobenen Listenpunkt */
-#editable-list li[style] {
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Leichter Schatten */
+.clickable-list li a {
+    text-decoration: none;
+    color: #000080;
+    font-size: 18px;
 }
 
 /* Styling für den Footer-Link */
