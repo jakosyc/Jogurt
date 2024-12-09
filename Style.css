@@ -55,6 +55,7 @@ body {
     filter: blur(0.4px); /* Teletext-ähnlicher Verschwommeneffekt */
     font-size: 6px;
     font-weight: bold;
+    text-decoration: none;
     color: yellow; /* Gelbe Schrift */
     cursor: pointer; /* Zeigt beim Hover an, dass der Kreis klickbar ist */
     z-index: 999; /* Überlagert andere Inhalte */
