@@ -44,9 +44,9 @@ body {
     right: 20px; /* Abstand vom rechten Rand */
     width: 50px; /* Breite des Kreises */
     height: 50px; /* Höhe des Kreises (gleich wie Breite für Kreisform) */
-    background-color: white; /* Farbe des Kreises */
+    background-color: black; /* Farbe des Kreises */
     color: black; /* Textfarbe */
-    border-radius: 50%; /* Runde Kanten für Kreis */
+    border-radius: 0%; /* Runde Kanten für Kreis */
     display: flex; /* Ermöglicht Zentrierung des Textes */
     justify-content: center; /* Horizontale Zentrierung des Textes */
     align-items: center; /* Vertikale Zentrierung des Textes */
@@ -55,6 +55,7 @@ body {
     filter: blur(0.4px); /* Teletext-ähnlicher Verschwommeneffekt */
     font-size: 6px;
     font-weight: bold;
+    color: yellow; /* Gelbe Schrift */
     cursor: pointer; /* Zeigt beim Hover an, dass der Kreis klickbar ist */
     z-index: 999; /* Überlagert andere Inhalte */
 }
