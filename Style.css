@@ -166,7 +166,7 @@ header h1 {
 
 /* Main-Bereich */
 main {
-    font-family: helvetica; /* Arial Schriftart */
+    font-family: Arial, sans-serif; /* Arial Schriftart */
     text-align: center;
     padding: 0px;
 }
