@@ -40,7 +40,7 @@ body {
 
 .circle {
     position: fixed;
-    top: 20px; /* Abstand vom oberen Rand */
+    top: 30px; /* Abstand vom oberen Rand */
     right: 20px; /* Abstand vom rechten Rand */
     width: 10px; /* Breite des Kreises */
     height: 10px; /* Höhe des Kreises (gleich wie Breite für Kreisform) */
