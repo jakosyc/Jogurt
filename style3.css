@@ -115,23 +115,14 @@ header h1 {
 /* Styling für die Liste */
 .clickable-list {
     list-style-type: none;
+    text-align: center;
     padding: 0;
     margin: 20px 0;
     width: 80%; /* Liste auf 80% des Bildschirms beschränken */
 }
 
-.clickable-list li {
-    margin: 10px 0;
-    background-color: #ffffff;
-    border: 2px solid #000080; /* Dunkelblauer Rand */
-    border-radius: 5px;
-    padding: 10px;
-    text-align: center;
-    transition: transform 0.2s, background-color 0.2s;
-}
-
 .clickable-list li:hover {
-    background-color: #add8e6; /* Helles Blau beim Hover */
+    background-color: yellow; /* Helles Blau beim Hover */
     transform: scale(1.05); /* Leichtes Vergrößern beim Hover */
 }
 
