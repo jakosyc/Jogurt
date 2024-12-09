@@ -124,7 +124,8 @@ header h1 {
 }
 
 .clickable-list li:hover {
-    background-color: yellow; /* Helles Blau beim Hover */
+    margin: 10px;
+    background-color: orange; /* Helles Blau beim Hover */
     transform: scale(1.05); /* Leichtes Vergrößern beim Hover */
 }
 
