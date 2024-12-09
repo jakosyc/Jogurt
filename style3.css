@@ -116,7 +116,7 @@ header h1 {
 .clickable-list {
     list-style-type: none;
     text-align: center;
-    font-family: 'terminal grotesque'; 
+    font-family: 'terminal grotesque', Verdana; /* Name der Schriftart */
     filter: blur(0.8px); /* Teletext-ähnlicher Verschwommeneffekt */
     padding: 10;
     margin: 20px 0;
