@@ -116,6 +116,8 @@ header h1 {
 .clickable-list {
     list-style-type: none;
     text-align: center;
+    font-family: 'terminal grotesque'; 
+    filter: blur(0.8px); /* Teletext-ähnlicher Verschwommeneffekt */
     padding: 0;
     margin: 20px 0;
     width: 80%; /* Liste auf 80% des Bildschirms beschränken */
@@ -154,56 +156,8 @@ header h1 {
 
 /* Main-Bereich */
 main {
-    font-family: helvetica; /* Arial Schriftart */
     text-align: center;
     padding: 0px;
-}
-
-#editable-list {
-    list-style: none;
-    padding: 0;
-    margin: 17px auto;
-    max-width: 80%; /* Verhindert Überlauf auf kleinen Geräten */
-}
-
-#editable-list li {
-    font-size: 1.8rem;
-    font-weight: bold; /* Arial Bold */
-    color: white; /* Weiße Schrift */
-    margin: 20px 0;
-    position: relative;
-    letter-spacing: 2px; /* Verpixelter Look */
-    text-align: center; /* Zentrierte Liste */
-}
-
-.line-main {
-    font-family: 'terminal grotesque'; 
-    font-size: 1.6rem;
-    font-weight: bold;
-    display: block;
-    filter: blur(0.5px); /* Teletext-ähnlicher Verschwommeneffekt */
-    text-shadow: 3px 3px 5px black; /* Schwarzer Schatten */
-}
-
-.line-sub {
-    font-family: 'terminal grotesque'; 
-    font-size: 1.6rem;
-    font-weight: normal;
-    display: block;
-    margin-top: 5px;
-    filter: blur(0.5px); /* Teletext-ähnlicher Verschwommeneffekt */
-    text-shadow: 3px 3px 5px black; /* Schwarzer Schatten */
-}
-
-.line-small {
-    font-family: 'terminal grotesque'; 
-    font-size: 1.2rem;
-    font-weight: normal;
-    display: block;
-    margin-top: 3px;
-    filter: blur(0.5px); /* Teletext-ähnlicher Verschwommeneffekt */
-    text-shadow: 3px 3px 5px black; /* Schwarzer Schatten */
-}
 
 /* Farben für Texte */
 .red { color: red; }
