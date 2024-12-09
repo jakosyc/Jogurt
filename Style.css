@@ -165,13 +165,14 @@ header h1 {
 
 /* Main-Bereich */
 main {
-    font-family: Consolas; /* Arial Schriftart */
+    font-family: 'terminal grotesque', Arial; /* Name der Schriftart */
     text-align: center;
     padding: 0px;
 }
 
 #editable-list {
     list-style: none;
+    font-family: 'terminal grotesque', Arial; /* Name der Schriftart */
     padding: 0;
     margin: 17px auto;
     max-width: 80%; /* Verhindert Überlauf auf kleinen Geräten */
@@ -179,6 +180,7 @@ main {
 
 #editable-list li {
     font-size: 1.8rem;
+    font-family: 'terminal grotesque', Arial; /* Name der Schriftart */
     font-weight: bold; /* Arial Bold */
     color: white; /* Weiße Schrift */
     margin: 20px 0;
@@ -188,7 +190,7 @@ main {
 }
 
 .line-main {
-    font-family: Arial, sans-serif; /* Arial Schriftart */
+    font-family: 'terminal grotesque', Arial; /* Name der Schriftart */
     font-size: 1.6rem;
     font-weight: bold;
     display: block;
@@ -197,7 +199,7 @@ main {
 }
 
 .line-sub {
-    font-family: Arial, sans-serif; /* Arial Schriftart */
+    font-family: 'terminal grotesque', Arial; /* Name der Schriftart */
     font-size: 1.6rem;
     font-weight: normal;
     display: block;
@@ -207,7 +209,7 @@ main {
 }
 
 .line-small {
-    font-family: Arial, sans-serif; /* Arial Schriftart */
+    font-family: 'terminal grotesque', Arial; /* Name der Schriftart */
     font-size: 1.2rem;
     font-weight: normal;
     display: block;
@@ -322,6 +324,15 @@ main {
         left: -100%;
         transform: translate(-50%, -50%) rotate(360deg);
     }
+}
+
+@font-face {
+    font-family: 'terminal grotesque'; /* Name der Schriftart */
+    src: url('fonts/terminal-grotesque-webfont.woff2') format('woff2'), /* Moderne Browser */
+         url('fonts/terminal-grotesque-webfont.woff') format('woff'),
+         url('fonts/terminal-grotesque-webfont.ttf') format('ttf');
+    font-weight: normal; /* Optional: Gewicht der Schriftart */
+    font-style: normal;  /* Optional: Stil der Schriftart */
 }
 
 @media (max-width: 750px) {
