@@ -44,7 +44,7 @@ body {
     right: 0px; /* Abstand vom rechten Rand */
     width: 40px; /* Breite des Kreises */
     height: 40px; /* Höhe des Kreises (gleich wie Breite für Kreisform) */
-    background-color: black; /* Farbe des Kreises */
+    background-color: yellow; /* Farbe des Kreises */
     color: black; /* Textfarbe */
     border-radius: 0%; /* Runde Kanten für Kreis */
     display: flex; /* Ermöglicht Zentrierung des Textes */
@@ -56,7 +56,7 @@ body {
     font-size: 6px;
     font-weight: bold;
     text-decoration: none;
-    color: yellow; /* Gelbe Schrift */
+    color: red; /* Gelbe Schrift */
     cursor: pointer; /* Zeigt beim Hover an, dass der Kreis klickbar ist */
     z-index: 999; /* Überlagert andere Inhalte */
 }
