@@ -118,7 +118,7 @@ header h1 {
     text-align: center;
     font-family: 'terminal grotesque'; 
     filter: blur(0.8px); /* Teletext-ähnlicher Verschwommeneffekt */
-    padding: 0;
+    padding: 10;
     margin: 20px 0;
     width: 80%; /* Liste auf 80% des Bildschirms beschränken */
 }
@@ -130,6 +130,7 @@ header h1 {
 }
 
 .clickable-list li a {
+    margin: 10px;
     text-decoration: none;
     color: #000080;
     font-size: 18px;
