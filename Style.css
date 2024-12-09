@@ -188,7 +188,7 @@ main {
 }
 
 .line-main {
-    font-family: 'terminal grotesque'; 
+    font-family: Arial, sans-serif; /* Arial Schriftart */
     font-size: 1.6rem;
     font-weight: bold;
     display: block;
@@ -197,7 +197,7 @@ main {
 }
 
 .line-sub {
-    font-family: 'terminal grotesque'; 
+    font-family: Arial, sans-serif; /* Arial Schriftart */
     font-size: 1.6rem;
     font-weight: normal;
     display: block;
@@ -207,7 +207,7 @@ main {
 }
 
 .line-small {
-    font-family: 'terminal grotesque'; 
+    font-family: Arial, sans-serif; /* Arial Schriftart */
     font-size: 1.2rem;
     font-weight: normal;
     display: block;
@@ -324,15 +324,6 @@ main {
     }
 }
 
-@font-face {
-    font-family: 'terminal grotesque'; /* Name der Schriftart */
-    src: url('fonts/terminal-grotesque-webfont.woff2') format('woff2'), /* Moderne Browser */
-         url('fonts/terminal-grotesque-webfont.woff') format('woff'),
-         url('fonts/terminal-grotesque-webfont.ttf') format('ttf');
-    font-weight: normal; /* Optional: Gewicht der Schriftart */
-    font-style: normal;  /* Optional: Stil der Schriftart */
-}
-
 @media (max-width: 750px) {
        }  
     
@@ -355,7 +346,6 @@ main {
     }
 
     #editable-list li {
-        font-family: Arial, sans-serif; /* Arial Schriftart */
         font-size: 1rem;
         margin: 15px 0;
         align-items: center;
