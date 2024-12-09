@@ -180,7 +180,7 @@ main {
 
 #editable-list li {
     font-size: 1.8rem;
-    font-family: 'terminal grotesque', Arial; /* Name der Schriftart */
+    font-family: 'terminal grotesque', Verdana; /* Name der Schriftart */
     font-weight: bold; /* Arial Bold */
     color: white; /* Weiße Schrift */
     margin: 20px 0;
@@ -190,7 +190,7 @@ main {
 }
 
 .line-main {
-    font-family: 'terminal grotesque', Arial; /* Name der Schriftart */
+    font-family: 'terminal grotesque', Verdana; /* Name der Schriftart */
     font-size: 1.6rem;
     font-weight: bold;
     display: block;
@@ -199,7 +199,7 @@ main {
 }
 
 .line-sub {
-    font-family: 'terminal grotesque', Arial; /* Name der Schriftart */
+    font-family: 'terminal grotesque', Verdana; /* Name der Schriftart */
     font-size: 1.6rem;
     font-weight: normal;
     display: block;
@@ -209,7 +209,7 @@ main {
 }
 
 .line-small {
-    font-family: 'terminal grotesque', Arial; /* Name der Schriftart */
+    font-family: 'terminal grotesque', Verdana; /* Name der Schriftart */
     font-size: 1.2rem;
     font-weight: normal;
     display: block;
