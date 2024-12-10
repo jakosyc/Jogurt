@@ -190,7 +190,7 @@ main {
     margin-top: 3px;
     color: black; /* Leicht grauer Text */
     text-shadow: 3px 3px 5px white; /* Schwarzer Schatten */
-    filter: blur(0.8px); /* Teletext-ähnlicher Verschwommeneffekt */
+    filter: blur(0.5px); /* Teletext-ähnlicher Verschwommeneffekt */
 }
 
 /* Farben für Texte */
