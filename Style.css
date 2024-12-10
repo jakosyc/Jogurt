@@ -260,7 +260,6 @@ main {
 
 /* Footer-Bild */
 .footer-container {
-    overflow: hidden; /* Bild bleibt im Container */
     position: relative;
     width: 100%;
     height: 200px;
@@ -269,6 +268,7 @@ main {
 
 .footer-bild {
     position: absolute;
+    z-index: 999; /* Überlagert andere Inhalte */
     top: 50%;
     left: 100%;
     filter: blur(1px); /* Teletext-ähnlicher Verschwommeneffekt */
