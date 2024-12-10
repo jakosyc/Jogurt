@@ -160,6 +160,7 @@ main {
     position: relative;
     letter-spacing: 2px; /* Verpixelter Look */
     text-align: center; /* Zentrierte Liste */
+    filter: blur(0.8px); /* Teletext-ähnlicher Verschwommeneffekt */
 }
 
 .line-main {
@@ -168,6 +169,7 @@ main {
     font-weight: bold;
     display: block;
     text-shadow: 3px 3px 5px white; /* Schwarzer Schatten */
+    filter: blur(0.8px); /* Teletext-ähnlicher Verschwommeneffekt */
 }
 
 .line-sub {
@@ -177,6 +179,7 @@ main {
     display: block;
     margin-top: 5px;
     text-shadow: 3px 3px 5px white; /* Schwarzer Schatten */
+    filter: blur(0.8px); /* Teletext-ähnlicher Verschwommeneffekt */
 }
 
 .line-small {
@@ -187,6 +190,7 @@ main {
     margin-top: 3px;
     color: black; /* Leicht grauer Text */
     text-shadow: 3px 3px 5px white; /* Schwarzer Schatten */
+    filter: blur(0.8px); /* Teletext-ähnlicher Verschwommeneffekt */
 }
 
 /* Farben für Texte */
