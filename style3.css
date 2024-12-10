@@ -39,22 +39,23 @@ body {
 }
 
 .circle {
-    position: fixed;
-    top: 20px; /* Abstand vom oberen Rand */
+    position: fixed; /* Fixiert den Kreis in der Ecke */
+    top: 25px; /* Abstand vom oberen Rand */
     right: 20px; /* Abstand vom rechten Rand */
-    width: 50px; /* Breite des Kreises */
-    height: 50px; /* Höhe des Kreises (gleich wie Breite für Kreisform) */
-    background-color: white; /* Farbe des Kreises */
-    color: black; /* Textfarbe */
+    width: 15px; /* Breite des Kreises */
+    height: 15px; /* Höhe des Kreises (gleich wie Breite für Kreisform) */
+    background-color: yellow; /* Farbe des Kreises */
     border-radius: 50%; /* Runde Kanten für Kreis */
     display: flex; /* Ermöglicht Zentrierung des Textes */
     justify-content: center; /* Horizontale Zentrierung des Textes */
     align-items: center; /* Vertikale Zentrierung des Textes */
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3); /* Optional: Schatten für visuelle Tiefe */
     font-family: Arial, sans-serif;
-    filter: blur(0.4px); /* Teletext-ähnlicher Verschwommeneffekt */
-    font-size: 6px;
+    filter: blur(0.8px); /* Teletext-ähnlicher Verschwommeneffekt */
+    font-size: 9px;
     font-weight: bold;
+    text-decoration: none;
+    color: blue; /* Gelbe Schrift */
     cursor: pointer; /* Zeigt beim Hover an, dass der Kreis klickbar ist */
     z-index: 999; /* Überlagert andere Inhalte */
 }
