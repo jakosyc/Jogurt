@@ -39,7 +39,7 @@ body {
 }
 
 .left-circle {
-    position: fixed; /* Fixiert den Kreis in der Ecke */
+    display: inline-block; /* Block-Level für bessere Positionierung */
     top: 20px; /* Abstand vom oberen Bildschirmrand */
     left: 25px; /* Abstand vom linken Bildschirmrand */
     width: 15px; /* Breite des Kreises */
