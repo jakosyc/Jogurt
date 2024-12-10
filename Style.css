@@ -62,7 +62,7 @@ body {
 
 .circle2 {
     top: 25px; /* Abstand vom oberen Rand */
-    left: 0px; /* Abstand vom rechten Rand */
+    right: 780px; /* Abstand vom rechten Rand */
     width: 15px; /* Breite des Kreises */
     height: 15px; /* Höhe des Kreises (gleich wie Breite für Kreisform) */
     background-color: white; /* Farbe des Kreises */
