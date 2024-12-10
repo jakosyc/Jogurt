@@ -317,12 +317,12 @@ main {
 
 @keyframes moveAndRotate {
     0% {
-        left: 120%;
-        transform: translate(-60%, -60%) rotate(0deg);
+        left: 100%;
+        transform: translate(-50%, -50%) rotate(0deg);
     }
     100% {
-        left: -120%;
-        transform: translate(-60%, -60%) rotate(360deg);
+        left: -100%;
+        transform: translate(-50%, -50%) rotate(360deg);
     }
 }
 
@@ -371,5 +371,6 @@ main {
 
     .footer-bild {
         height: 80px; /* Bildgröße verkleinern */
+        width: 100%; /* Passe die Breite des Ovals an */
     }
 }
