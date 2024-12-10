@@ -39,14 +39,12 @@ body {
 }
 
 .left-circle {
-    position: fixed; /* Fixiert den Kreis in der Ecke */
     top: 20px; /* Abstand vom oberen Bildschirmrand */
     left: 25px; /* Abstand vom linken Bildschirmrand */
     width: 15px; /* Breite des Kreises */
     height: 15px; /* Höhe des Kreises */
     background-color: white; /* Hintergrundfarbe des Kreises */
     color: black; /* Textfarbe */
-    border: 2px solid black; /* Schwarzer Rand */
     border-radius: 50%; /* Macht das Element rund */
     display: flex; /* Zentriert Text */
     align-items: center; /* Zentriert Text vertikal */
@@ -54,6 +52,7 @@ body {
     font-size: 8px; /* Schriftgröße */
     cursor: pointer; /* Ändert den Mauszeiger beim Hover */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Leichter Schatten */
+    filter: blur(0.8px); /* Teletext-ähnlicher Verschwommeneffekt */
 }
 
 .circle {
