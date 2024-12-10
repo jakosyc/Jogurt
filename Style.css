@@ -60,6 +60,27 @@ body {
     z-index: 999; /* Überlagert andere Inhalte */
 }
 
+.circle {
+    top: 25px; /* Abstand vom oberen Rand */
+    left: 20px; /* Abstand vom rechten Rand */
+    width: 10px; /* Breite des Kreises */
+    height: 10px; /* Höhe des Kreises (gleich wie Breite für Kreisform) */
+    background-color: white; /* Farbe des Kreises */
+    border-radius: 50%; /* Runde Kanten für Kreis */
+    display: flex; /* Ermöglicht Zentrierung des Textes */
+    justify-content: center; /* Horizontale Zentrierung des Textes */
+    align-items: center; /* Vertikale Zentrierung des Textes */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3); /* Optional: Schatten für visuelle Tiefe */
+    font-family: Arial, sans-serif;
+    filter: blur(0.8px); /* Teletext-ähnlicher Verschwommeneffekt */
+    font-size: 9px;
+    font-weight: bold;
+    text-decoration: none;
+    color: blue; 
+    cursor: pointer; /* Zeigt beim Hover an, dass der Kreis klickbar ist */
+    z-index: 999; /* Überlagert andere Inhalte */
+}
+
 .circle:hover {
     background-color: #f0f0f0; /* Hellerer Hintergrund bei Hover */
 }
@@ -357,6 +378,7 @@ main {
     }
 
     #editable-list li {
+        filter: blur(0.8px); /* Teletext-ähnlicher Verschwommeneffekt */
         font-size: 1rem;
         margin: 15px 0;
         align-items: center;
