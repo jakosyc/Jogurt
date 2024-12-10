@@ -44,7 +44,7 @@ body {
     right: 20px; /* Abstand vom rechten Rand */
     width: 15px; /* Breite des Kreises */
     height: 15px; /* Höhe des Kreises (gleich wie Breite für Kreisform) */
-    background-color: yellow; /* Farbe des Kreises */
+    background-color: orange; /* Farbe des Kreises */
     border-radius: 50%; /* Runde Kanten für Kreis */
     display: flex; /* Ermöglicht Zentrierung des Textes */
     justify-content: center; /* Horizontale Zentrierung des Textes */
