@@ -40,7 +40,7 @@ body {
 
 .left-circle {
     display: inline-block; /* Block-Level für bessere Positionierung */
-    top: 20px; /* Abstand vom oberen Bildschirmrand */
+    bottom: 20px; /* Abstand vom oberen Bildschirmrand */
     left: 25px; /* Abstand vom linken Bildschirmrand */
     width: 15px; /* Breite des Kreises */
     height: 15px; /* Höhe des Kreises */
