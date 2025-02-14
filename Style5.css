@@ -1,264 +1,108 @@
 /* Allgemeines Styling */
 body {
     display: flex;
-    justify-content: center; /* Zentriert horizontal */
-    align-items: center; /* Zentriert vertikal */
-    min-height: 100vh; /* Stellt sicher, dass der Inhalt die volle Höhe des Viewports einnimmt */
-    margin: 0; /* Entfernt Standardabstände */
-    text-align: center; /* Zentriert den Text innerhalb von Elementen */
-    flex-direction: column; /* Elemente werden von oben nach unten gestapelt */
-    font-family: Arial, sans-serif; /* Arial Schriftart */
+    justify-content: space-between; /* Teilt den Bildschirm in zwei Hälften */
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: rgb(255, 255, 255);
+    overflow: hidden; /* Kein globales Scrollen */
     text-align: center; /* Text zentrieren */
-    margin: 20px;
-    padding: 0;
-    background-color: rgb(255,255,255); ; /* RGB-Blau für den gesamten Hintergrund */
-    overflow-x: hidden; /* Verhindert horizontales Scrollen, ohne vertikales zu blockieren */
-    overflow-y: auto;   /* Ermöglicht vertikales Scrollen */
-    box-sizing: border-box; /* Berücksichtigt Rahmen und Padding in der Breite */ 
+    flex-direction: column; /* Elemente werden von oben nach unten gestapelt */
+    box-sizing: border-box; /* Berücksichtigt Rahmen und Padding in der Breite */
 }
 
 /* Stil für das Datum */
 #date {
     color: white;
     font-weight: bold;
-    font-family: Arial, sans-serif; /* Arial Schriftart */
+    font-family: Arial, sans-serif;
     text-shadow: 3px 3px 5px black;
-    filter: blur(0.8px); /* Teletext-ähnlicher Verschwommeneffekt */
-    text-align: center; /* Text zentrieren */
+    filter: blur(0.8px);
+    text-align: center;
 }
-
 
 /* Stil für die Uhrzeit */
 #time {
     color: white;
     font-weight: normal;
-    font-family: Arial, sans-serif; /* Arial Schriftart */
+    font-family: Arial, sans-serif;
     text-shadow: 3px 3px 5px black;
-    filter: blur(0.8px); /* Teletext-ähnlicher Verschwommeneffekt */
-    text-align: center; /* Text zentrieren */
+    filter: blur(0.8px);
+    text-align: center;
 }
 
 .circle {
-    position: fixed; /* Fixiert den Kreis in der Ecke */
-    top: 25px; /* Abstand vom oberen Rand */
-    right: 20px; /* Abstand vom rechten Rand */
-    width: 15px; /* Breite des Kreises */
-    height: 15px; /* Höhe des Kreises (gleich wie Breite für Kreisform) */
-    background-color: yellow; /* Farbe des Kreises */
-    border-radius: 50%; /* Runde Kanten für Kreis */
-    display: flex; /* Ermöglicht Zentrierung des Textes */
-    justify-content: center; /* Horizontale Zentrierung des Textes */
-    align-items: center; /* Vertikale Zentrierung des Textes */
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3); /* Optional: Schatten für visuelle Tiefe */
+    position: fixed;
+    top: 25px;
+    right: 20px;
+    width: 15px;
+    height: 15px;
+    background-color: yellow;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
     font-family: Arial, sans-serif;
-    filter: blur(0.8px); /* Teletext-ähnlicher Verschwommeneffekt */
+    filter: blur(0.8px);
     font-size: 9px;
     font-weight: bold;
-    text-decoration: none;
-    color: blue; /* Gelbe Schrift */
-    cursor: pointer; /* Zeigt beim Hover an, dass der Kreis klickbar ist */
-    z-index: 999; /* Überlagert andere Inhalte */
+    color: blue;
+    cursor: pointer;
+    z-index: 999;
 }
 
 .circle:hover {
-    background-color: #f0f0f0; /* Hellerer Hintergrund bei Hover */
+    background-color: #f0f0f0;
 }
 
 header {
     padding: 20px;
     display: flex;
-    align-items: center; /* Inhalte horizontal zentrieren */
+    align-items: center;
     justify-content: center;
-    text-align: center; /* Text zentrieren */
-    max-width: 100%; /* Begrenze die Breite auf den sichtbaren Bereich */
+    text-align: center;
+    max-width: 100%;
 }
 
 .header-content {
     display: flex;
     align-items: center;
-    flex-wrap: wrap; /* Elemente umbrechen */
+    flex-wrap: wrap;
     text-align: center;
 }
 
 .title-image {
-    width: 130px; /* Größe des kleinen Bildes */
+    width: 130px;
     height: 130px;
-    margin-right: 20px; /* Abstand zwischen Bild und Titel */
+    margin-right: 20px;
     filter: blur(0.5px);
 }
 
-
 header h1 {
-    font-family: Arial, sans-serif; /* Arial Schriftart */
+    font-family: Arial, sans-serif;
     font-size: 3rem;
     font-weight: bold;
-    color: yellow; /* Gelbe Schrift */
-    text-shadow: 
-        2px 2px 0px black, 
-        0 0 10px black, 
-        0 0 20px black; /* Starker verschwommener Effekt */
-    filter: blur(1px); /* Teletext-ähnlicher Verschwommeneffekt */
-    letter-spacing: 2px; /* Verpixelter Look */
+    color: yellow;
+    text-shadow: 2px 2px 0px black, 0 0 10px black, 0 0 20px black;
+    filter: blur(1px);
+    letter-spacing: 2px;
     position: relative;
     padding: 10px 40px;
     display: inline-block;
 }
 
 .oval-title {
-    border: 5px solid black; /* Schwarzes Oval */
-    border-radius: 50%; /* Ovalform */
+    border: 5px solid black;
+    border-radius: 50%;
     display: inline-block;
     padding: 30px 50px;
     text-align: center;
-    background: linear-gradient(to right, white 65%, rgb(255, 69, 0) 100%); 
+    background: linear-gradient(to right, white 65%, rgb(255, 69, 0) 100%);
 }
 
-.share-icon {
-    display: inline-block; /* Block-Level für bessere Positionierung */
-    margin-right: 10px;    /* Abstand rechts */
-    cursor: pointer;       /* Zeigt an, dass es anklickbar ist */
-    font-weight: bold;     /* Fett für bessere Lesbarkeit */
-    font-size: 30px;       /* Schriftgröße */
-    color: yellow;         /* Gelbe Schrift */
-    text-shadow: 3px 3px 5px black; /* Schwarzer Schatten */
-    filter: blur(1px);   /* Leicht verschwommen */
-    transition: transform 0.2s ease-in-out; /* Animation bei Hover */
-}
-
-/* Standard-Styling der Liste */
-#editable-list li {
-    margin: 20px 0;
-    padding: 10px;
-    border-radius: 5px;
-}
-
-/* Hover-Effekt für das Teilen-Symbol */
-.share-icon:hover {
-    transform: scale(10); /* Vergrößert das Symbol beim Hover */
-    
-}
-
-/* Optisches Feedback für hervorgehobenen Listenpunkt */
-#editable-list li[style] {
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Leichter Schatten */
-}
-
-/* Styling für den Footer-Link */
-.footer-link {
-    font-family: Arial, sans-serif; /* Arial Schriftart */
-    font-weight: normal; /* Kein fetter Text */
-    font-size: 1rem; /* Standard-Schriftgröße */
-    color: white; /* Weißer Text */
-    filter: blur(1px); /* Teletext-ähnlicher Verschwommeneffekt */
-    text-shadow: 3px 3px 5px black; /* Schwarzer Schatten */
-    text-align: center; /* Zentrierter Text */
-    margin: 20px 0; /* Abstand oben und unten */
-    padding: 10px; /* Innerer Abstand */
-    width: 100%; /* Breite auf den gesamten Bildschirm ausdehnen */
-    text-decoration: none; /* Entfernt die Unterstreichung */
-}
-
-.footer-link:hover {
-    color: yellow; /* Farbe bei Hover */
-    text-decoration: none; /* Entfernt die Unterstreichung */
-}
-
-/* Main-Bereich */
-main {
-    font-family: 'terminal grotesque', Arial; /* Name der Schriftart */
-    text-align: center;
-    padding: 0px;
-}
-
-#editable-list {
-    list-style: none;
-    font-family: 'terminal grotesque', Arial; /* Name der Schriftart */
-    padding: 0;
-    margin: 17px auto;
-    max-width: 80%; /* Verhindert Überlauf auf kleinen Geräten */
-}
-
-#editable-list li {
-    font-size: 1.8rem;
-    font-family: 'terminal grotesque', Verdana; /* Name der Schriftart */
-    font-weight: bold; /* Arial Bold */
-    color: white; /* Weiße Schrift */
-    margin: 20px 0;
-    position: relative;
-    letter-spacing: 2px; /* Verpixelter Look */
-    text-align: center; /* Zentrierte Liste */
-}
-
-.line-main {
-    font-family: 'terminal grotesque', Verdana; /* Name der Schriftart */
-    font-size: 1.6rem;
-    font-weight: bold;
-    display: block;
-    filter: blur(0.5px); /* Teletext-ähnlicher Verschwommeneffekt */
-    text-shadow: 3px 3px 5px black; /* Schwarzer Schatten */
-}
-
-.line-sub {
-    font-family: 'terminal grotesque', Verdana; /* Name der Schriftart */
-    font-size: 1.6rem;
-    font-weight: normal;
-    display: block;
-    margin-top: 5px;
-    filter: blur(0.5px); /* Teletext-ähnlicher Verschwommeneffekt */
-    text-shadow: 3px 3px 5px black; /* Schwarzer Schatten */
-}
-
-.line-small {
-    font-family: 'terminal grotesque', Verdana; /* Name der Schriftart */
-    font-size: 1.2rem;
-    font-weight: normal;
-    display: block;
-    margin-top: 3px;
-    filter: blur(0.5px); /* Teletext-ähnlicher Verschwommeneffekt */
-    text-shadow: 3px 3px 5px black; /* Schwarzer Schatten */
-}
-
-/* Farben für Texte */
-.red { color: red; }
-.blue { color: blue; }
-.green { color: green; }
-.yellow { color: yellow; }
-.purple { color: purple; }
-.orange { color: rgb (255,69,0); }
-
-.red, .blue, .green, .yellow, .purple, .orange {
-    text-shadow: 1px 1px 2px black;
-}
-
-/* Untertitel */
-.sub-title {
-    font-size:1.4rem;
-    font-family: Arial, sans-serif; /* Arial Schriftart */
-    font-weight: bold;
-    color: yellow; /* Gelbe Schrift */
-    text-shadow: 
-        2px 2px 0px black, 
-        0 0 10px black, 
-        0 0 20px black; /* Starker verschwommener Effekt */
-    filter: blur(1px); /* Teletext-ähnlicher Verschwommeneffekt */
-    letter-spacing: 2px; /* Verpixelter Look */
-    text-align: center;
-    margin-top: 80px; /* Vierfacher Abstand */
-
-    border: 3px solid black; /* Schwarzer Rahmen */
-    border-radius: 0px; /* Optionale Abrundung der Ecken */
-    padding: 20px; /* Abstand zwischen Text und Rahmen */
-    display: inline-block; /* Passt die Breite des Rahmens an den Inhalt an */
-    background-color: rgb(255,255,255); /* Halbtransparenter Hintergrund (optional) */
-
-}
-
-/* Wenn der Untertitel angeklickt wird, soll er zittern */
-.sub-title.shake {
-    animation: shake 0.5s ease-in-out; /* Dauer der Animation */
-}
-
-/* Footer-Bild */
 .footer-container {
     position: relative;
     width: 100%;
@@ -268,26 +112,68 @@ main {
 
 .footer-bild {
     position: absolute;
-    z-index: 999; /* Überlagert andere Inhalte */
+    z-index: 999;
     top: 50%;
     left: 100%;
-    filter: blur(1px); /* Teletext-ähnlicher Verschwommeneffekt */
+    filter: blur(1px);
     transform: translate(-50%, -50%);
     height: 100px;
     animation: moveAndRotate 50s linear infinite;
 }
 
 .footer-text {
-    font-family: Arial, sans-serif; /* Arial Schriftart */
-    font-weight: normal; /* Kein fetter Text */
-    font-size: 1rem; /* Standard-Schriftgröße */
-    color: white; /* Weißer Text */
-    filter: blur(1px); /* Teletext-ähnlicher Verschwommeneffekt */
-    text-shadow: 3px 3px 5px black; /* Schwarzer Schatten */
-    text-align: center; /* Zentrierter Text */
-    margin: 20px 0; /* Abstand oben und unten */
-    padding: 10px; /* Innerer Abstand */
-    width: 100%; /* Breite auf den gesamten Bildschirm ausdehnen */
+    font-family: Arial, sans-serif;
+    font-weight: normal;
+    font-size: 1rem;
+    color: white;
+    filter: blur(1px);
+    text-shadow: 3px 3px 5px black;
+    text-align: center;
+    margin: 20px 0;
+    padding: 10px;
+    width: 100%;
+}
+
+/* Linke Hälfte für große Bilder */
+.left-container {
+    width: 50%;
+    height: 100vh;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    box-shadow: inset -2px 0px 5px rgba(0, 0, 0, 0.1);
+}
+
+.left-container img {
+    width: 80%;
+    max-height: 300px;
+    object-fit: cover;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* Rechte Hälfte für kleine Bilder */
+.right-container {
+    width: 50%;
+    height: 100vh;
+    overflow-x: auto;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    white-space: nowrap;
+    box-shadow: inset 2px 0px 5px rgba(0, 0, 0, 0.1);
+}
+
+.right-container img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    margin-right: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 /* Animationen */
