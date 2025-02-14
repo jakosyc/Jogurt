@@ -11,7 +11,7 @@ body {
     text-align: center; /* Text zentrieren */
     margin: 20px;
     padding: 0;
-    background-color: rgb(100,100,100); ; /* RGB-Blau für den gesamten Hintergrund */
+    background-color: rgb(255,255,255); ; /* RGB-Blau für den gesamten Hintergrund */
     overflow-x: hidden; /* Verhindert horizontales Scrollen, ohne vertikales zu blockieren */
     overflow-y: auto;   /* Ermöglicht vertikales Scrollen */
     box-sizing: border-box; /* Berücksichtigt Rahmen und Padding in der Breite */ 
