@@ -1,0 +1,33 @@
+ * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            display: flex;
+            height: 100vh;
+            overflow: hidden;
+        }
+        .left-column {
+            width: 50%;
+            overflow-y: auto;
+            height: 100vh;
+        }
+        .left-column img {
+            width: 100%;
+            display: block;
+            margin-bottom: 10px;
+        }
+        .right-column {
+            width: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow-x: auto;
+            white-space: nowrap;
+            background: #f0f0f0;
+        }
+        .right-column img {
+            height: 150px;
+            margin: 10px;
+        }
