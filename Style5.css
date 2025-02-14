@@ -165,8 +165,13 @@ header h1 {
         }
         .left-column {
             width: 50%;
-            overflow-y: auto;
+            overflow-y: scroll;
             height: 100vh;
+            scrollbar-width: none;
+            -ms-overflow-style: none;
+        }
+        .left-column::-webkit-scrollbar {
+            display: none;
         }
         .left-column img {
             width: 100%;
@@ -178,15 +183,19 @@ header h1 {
             display: flex;
             align-items: center;
             justify-content: center;
-            overflow-x: auto;
+            overflow-x: scroll;
             white-space: nowrap;
             background: #f0f0f0;
+            scrollbar-width: none;
+            -ms-overflow-style: none;
+        }
+        .right-column::-webkit-scrollbar {
+            display: none;
         }
         .right-column img {
             height: 150px;
             margin: 10px;
         }
-
 
 /* Untertitel */
 .sub-title {
