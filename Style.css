@@ -70,12 +70,11 @@ body {
 }
 
   .biene {
-            position: absolute;
-            width: 80px; /* Größe der Biene */
-            height: auto;
-            pointer-events: none; /* Verhindert Interaktionen */
-            z-index: 999; /* Überlagert andere Inhalte */
-            transition: transform 2s linear; /* Weiche Bewegung */
+        position: fixed; /* Fixiert den Kreis in der Ecke */
+        top: 300px; /* Abstand vom oberen Rand */
+        left: 30px; /* Abstand vom rechten Rand */
+        filter: blur(0.2px); /* Teletext-ähnlicher Verschwommeneffekt */
+        z-index: 999; /* Überlagert andere Inhalte */
       
         }
 
