@@ -8,17 +8,19 @@
     <style>
         body { font-family: Arial, sans-serif; margin: 40px; }
         form { max-width: 400px; margin: auto; display: flex; flex-direction: column; gap: 15px; }
-        label { font-weight: bold; }
+        .form-group { display: flex; align-items: center; gap: 10px; }
+        label { font-weight: bold; min-width: 100px; text-align: right; }
         input, textarea { 
-            width: 100%; 
+            flex: 1;
             border: none; 
-            border-bottom: 2px solid black; 
+            border-bottom: 1px solid black; 
             padding: 5px; 
             font-size: 16px;
             background: transparent;
             outline: none;
         }
-        button { background-color: blue; color: white; padding: 10px; border: none; cursor: pointer; }
+        .submit-container { text-align: center; margin-top: 20px; }
+        .submit-container img { cursor: pointer; width: 50px; height: auto; }
     </style>
 </head>
 <body>
@@ -33,29 +35,43 @@
     </header>
 
     <form id="contactForm">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required>
+        <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+        </div>
         
-        <label for="email">E-Mail:</label>
-        <input type="email" id="email" name="email" required>
+        <div class="form-group">
+            <label for="email">E-Mail:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
         
-        <label for="message">Nachricht:</label>
-        <textarea id="message" name="message" rows="4" required></textarea>
+        <div class="form-group">
+            <label for="message">Nachricht:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+        </div>
         
-        <button type="submit">Absenden</button>
+        <div class="submit-container">
+            <img src="submit.gif" alt="Absenden" id="submit-button">
+        </div>
     </form>
     
     <script>
-        document.getElementById("contactForm").addEventListener("submit", function(event) {
+        document.getElementById("submit-button").addEventListener("click", function(event) {
             event.preventDefault();
             
-            const name = document.getElementById("name").value;
-            const email = document.getElementById("email").value;
-            const message = document.getElementById("message").value;
+            const formData = new FormData(document.getElementById("contactForm"));
             
-            alert("Daten gesendet:\nName: " + name + "\nE-Mail: " + email + "\nNachricht: " + message);
-            
-            // Hier könnte man die Daten per AJAX an einen Server senden
+            fetch('save_data.php', {
+                method: 'POST',
+                body: formData
+            })
+            .then(response => response.text())
+            .then(data => {
+                alert(data); // Bestätigung für den Benutzer
+            })
+            .catch(error => {
+                console.error('Fehler:', error);
+            });
         });
     </script>
 
