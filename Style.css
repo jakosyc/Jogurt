@@ -103,8 +103,8 @@ header {
 }
 
 .title-image {
-    width: 130px; /* Größe des kleinen Bildes */
-    height: 130px;
+    width: 100px; /* Größe des kleinen Bildes */
+    height: 100px;
     margin-right: 20px; /* Abstand zwischen Bild und Titel */
     filter: blur(0.5px);
 }
@@ -112,7 +112,7 @@ header {
 
 header h1 {
     font-family: Arial, sans-serif; /* Arial Schriftart */
-    font-size: 3rem;
+    font-size: 2rem;
     font-weight: bold;
     color: yellow; /* Gelbe Schrift */
     text-shadow: 
@@ -130,7 +130,7 @@ header h1 {
     border: 5px solid black; /* Schwarzes Oval */
     border-radius: 50%; /* Ovalform */
     display: inline-block;
-    padding: 30px 50px;
+    padding: 15px 25px;
     text-align: center;
     background: linear-gradient(to right, white 65%, rgb(255, 69, 0) 100%); 
 }
