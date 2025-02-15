@@ -176,6 +176,66 @@ header h1 {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
+/* Untertitel */
+.sub-title {
+    font-size:1.4rem;
+    font-family: Arial, sans-serif; /* Arial Schriftart */
+    font-weight: bold;
+    color: yellow; /* Gelbe Schrift */
+    text-shadow: 
+        2px 2px 0px black, 
+        0 0 10px black, 
+        0 0 20px black; /* Starker verschwommener Effekt */
+    filter: blur(1px); /* Teletext-ähnlicher Verschwommeneffekt */
+    letter-spacing: 2px; /* Verpixelter Look */
+    text-align: center;
+    margin-top: 80px; /* Vierfacher Abstand */
+
+    border: 3px solid black; /* Schwarzer Rahmen */
+    border-radius: 0px; /* Optionale Abrundung der Ecken */
+    padding: 20px; /* Abstand zwischen Text und Rahmen */
+    display: inline-block; /* Passt die Breite des Rahmens an den Inhalt an */
+    background-color: rgb(255,255,255); /* Halbtransparenter Hintergrund (optional) */
+
+}
+
+/* Wenn der Untertitel angeklickt wird, soll er zittern */
+.sub-title.shake {
+    animation: shake 0.5s ease-in-out; /* Dauer der Animation */
+}
+
+/* Footer-Bild */
+.footer-container {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    margin-top: 20px;
+}
+
+.footer-bild {
+    position: absolute;
+    z-index: 999; /* Überlagert andere Inhalte */
+    top: 50%;
+    left: 100%;
+    filter: blur(1px); /* Teletext-ähnlicher Verschwommeneffekt */
+    transform: translate(-50%, -50%);
+    height: 100px;
+    animation: moveAndRotate 50s linear infinite;
+}
+
+.footer-text {
+    font-family: Arial, sans-serif; /* Arial Schriftart */
+    font-weight: normal; /* Kein fetter Text */
+    font-size: 1rem; /* Standard-Schriftgröße */
+    color: white; /* Weißer Text */
+    filter: blur(1px); /* Teletext-ähnlicher Verschwommeneffekt */
+    text-shadow: 3px 3px 5px black; /* Schwarzer Schatten */
+    text-align: center; /* Zentrierter Text */
+    margin: 20px 0; /* Abstand oben und unten */
+    padding: 10px; /* Innerer Abstand */
+    width: 100%; /* Breite auf den gesamten Bildschirm ausdehnen */
+}
+
 /* Animationen */
 @keyframes bounce {
     0%, 100% {
