@@ -126,12 +126,12 @@ header h1 {
 }
 
 label {
-     font-size: 1.8rem;
+    font-size: 1.2rem;
     font-family: 'terminal grotesque', Verdana; /* Name der Schriftart */
     font-weight: bold; /* Arial Bold */
-    color: yellow; /* Weiße Schrift */
+    color: yellow; 
+    text-shadow: 3px 3px 5px black; 
     margin: 20px 0;
-    position: relative;
     letter-spacing: 2px; /* Verpixelter Look */
     text-align: center; /* Zentrierte Liste */
 }
