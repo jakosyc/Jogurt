@@ -1,4 +1,8 @@
 <?php
+
+error_reporting(E_ALL);  // Alle Fehler melden
+ini_set('display_errors', 1);  // Fehler im Browser anzeigen
+
 // PHPMailer einbinden
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
