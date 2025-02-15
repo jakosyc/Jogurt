@@ -5,7 +5,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $message = htmlspecialchars($_POST['message']);
     
     // E-Mail-Daten
-    $to = 'deine-email@example.com'; // Ziel-E-Mail-Adresse
+    $to = 'jakobsycha@gmail.com'; // Ziel-E-Mail-Adresse
     $subject = 'Kontaktformular: ' . $name;
     $headers = "From: $email\r\n";
     $headers .= "Reply-To: $email\r\n";
