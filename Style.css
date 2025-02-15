@@ -72,7 +72,8 @@ body {
             position: absolute;
             width: 80px; /* Größe der Biene */
             height: auto;
-            z-index: 500; /* Überlagert andere Inhalte */
+            pointer-events: none; /* Verhindert Interaktionen */
+            z-index: 999; /* Überlagert andere Inhalte */
         }
 
 .circle:hover {
