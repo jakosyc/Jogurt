@@ -1,5 +1,5 @@
 //Biene
-const biene = document.getElementById("biene");
+   const biene = document.getElementById("biene");
 
         function bewegeBiene() {
             let x = Math.random() * (window.innerWidth - 80); // Zufällige X-Position
@@ -8,7 +8,7 @@ const biene = document.getElementById("biene");
             biene.style.transform = `translate(${x}px, ${y}px)`;
         }
 
-        // Bewegt die Biene alle 2 Sekunden an eine neue Position
+        // Bewegt die Biene alle 2 Sekunden sanft an eine neue Position
         setInterval(bewegeBiene, 2000);
 
 // Funktion zum Teilen eines Listenpunkts
