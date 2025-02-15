@@ -149,7 +149,7 @@ label {
     font-size: 1.5rem;
     font-family: 'terminal grotesque', Verdana; /* Name der Schriftart */
     font-weight: bold; /* Arial Bold */
-    color: rgb(255, 69, 0); 
+    color: black; 
     text-shadow: 3px 3px 5px black; 
     margin: 20px 0;
     letter-spacing: 2px; /* Verpixelter Look */
