@@ -31,23 +31,38 @@
 
     <header>
         <img src="nebenbild.png" alt="Kleines Bild" class="title-image">
-        <h1 class="oval-title">૮++Kontaktformular++</h1> 
+        <h1 class="oval-title">++Kontaktformular++</h1> 
     </header>
 
     <form id="contactForm">
         <div class="form-group">
-            <label for="name">Name:</label>
+            <label for="name">Veranstaltungsname</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+
+         <div class="form-group">
+            <label for="name">Uhrzeit & Datum</label>
             <input type="text" id="name" name="name" required>
         </div>
         
         <div class="form-group">
-            <label for="email">E-Mail:</label>
+            <label for="email">Artists:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+
+        <div class="form-group">
+            <label for="email">Location & Adresse & Stadt</label>
             <input type="email" id="email" name="email" required>
         </div>
         
         <div class="form-group">
-            <label for="message">Nachricht:</label>
-            <textarea id="message" name="message" rows="4" required></textarea>
+            <label for="message">Mood/Genre</label>
+            <textarea id="message" name="message" required></textarea>
+        </div>
+
+         <div class="form-group">
+            <label for="message">deine emailadresse</label>
+            <textarea id="message" name="message" required></textarea>
         </div>
         
         <div class="submit-container">
