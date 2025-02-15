@@ -1,3 +1,16 @@
+//Biene
+const biene = document.getElementById("biene");
+
+        function bewegeBiene() {
+            let x = Math.random() * (window.innerWidth - 80); // Zufällige X-Position
+            let y = Math.random() * (window.innerHeight - 80); // Zufällige Y-Position
+            
+            biene.style.transform = `translate(${x}px, ${y}px)`;
+        }
+
+        // Bewegt die Biene alle 2 Sekunden an eine neue Position
+        setInterval(bewegeBiene, 2000);
+
 // Funktion zum Teilen eines Listenpunkts
 function shareEvent(event) {
     const shareIcon = event.target;
