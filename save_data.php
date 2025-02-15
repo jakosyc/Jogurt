@@ -39,7 +39,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $mail->Host = 'smtp.gmail.com';                             // Gmail SMTP-Server
         $mail->SMTPAuth = true;                                     // Aktiviere SMTP-Authentifizierung
         $mail->Username = 'spuckerfeuer@gmail.com';                  // Deine Gmail-Adresse
-        $mail->Password = 'zgkg ueed fcts deji';                           // Dein Gmail-Passwort (oder App-Passwort)
+        $mail->Password = 'kpye seea msuk ycfw';                           // Dein Gmail-Passwort (oder App-Passwort)
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;         // Aktiviere TLS-Verschlüsselung
         $mail->Port = 587;                                          // TCP-Port für TLS
 
