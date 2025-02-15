@@ -19,16 +19,16 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     try {
         // SMTP-Server konfigurieren
         $mail->isSMTP();
-        $mail->Host = 'smtp.example.com'; // Ersetze mit deinem SMTP-Host (z.B. smtp.gmail.com für Gmail)
+        $mail->Host = 'smtp.gmail.com'; // Ersetze mit deinem SMTP-Host (z.B. smtp.gmail.com für Gmail)
         $mail->SMTPAuth = true;
-        $mail->Username = 'deine-email@example.com'; // Deine E-Mail-Adresse
-        $mail->Password = 'dein-email-passwort'; // Dein E-Mail-Passwort
+        $mail->Username = 'spuckerfeuer@gmail.com'; // Deine E-Mail-Adresse
+        $mail->Password = 'FSHooligans'; // Dein E-Mail-Passwort
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
         $mail->Port = 587; // SMTP-Port (587 für TLS, 465 für SSL)
 
         // Absender und Empfänger
         $mail->setFrom($email, $name); // Der Absender ist die E-Mail-Adresse, die im Formular eingegeben wurde
-        $mail->addAddress('deine-email@example.com', 'Empfänger Name'); // Ziel-E-Mail-Adresse (Empfänger)
+        $mail->addAddress('spuckerfeuer@gmail.com', 'Empfänger Name'); // Ziel-E-Mail-Adresse (Empfänger)
 
         // E-Mail-Inhalt
         $mail->isHTML(true);
