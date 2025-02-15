@@ -16,8 +16,6 @@ body {
     overflow-y: auto;   /* Ermöglicht vertikales Scrollen */
     box-sizing: border-box; /* Berücksichtigt Rahmen und Padding in der Breite */
     width: 100vw; /* Volle Bildschirmbreite */
-    height: 100vh; /* Volle Bildschirmhöhe */
-    
 }
 
 /* Stil für das Datum */
