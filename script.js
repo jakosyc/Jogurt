@@ -1,15 +1,28 @@
 //Biene
-   const biene = document.getElementById("biene");
+    const biene = document.getElementById("biene");
+        let x = Math.random() * (window.innerWidth - 80);
+        let y = Math.random() * (window.innerHeight - 80);
+        let speedX = (Math.random() * 4) + 2; // Geschwindigkeit in X-Richtung
+        let speedY = (Math.random() * 4) + 2; // Geschwindigkeit in Y-Richtung
 
         function bewegeBiene() {
-            let x = Math.random() * (window.innerWidth - 80); // Zufällige X-Position
-            let y = Math.random() * (window.innerHeight - 80); // Zufällige Y-Position
-            
+            x += speedX;
+            y += speedY;
+
+            // Kollision mit rechtem oder linkem Rand
+            if (x <= 0 || x >= window.innerWidth - 80) {
+                speedX *= -1; // Richtung umkehren
+            }
+
+            // Kollision mit oberem oder unterem Rand
+            if (y <= 0 || y >= window.innerHeight - 80) {
+                speedY *= -1; // Richtung umkehren
+            }
+
             biene.style.transform = `translate(${x}px, ${y}px)`;
         }
 
-        // Bewegt die Biene alle 2 Sekunden sanft an eine neue Position
-        setInterval(bewegeBiene, 2000);
+        setInterval(bewegeBiene, 100); // Alle 20ms bewegen für flüssige Animation
 
 // Funktion zum Teilen eines Listenpunkts
 function shareEvent(event) {
