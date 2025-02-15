@@ -6,7 +6,7 @@ use PHPMailer\PHPMailer\Exception;
 // Autoload-Datei von PHPMailer einbinden
 require 'PHPMailer-master/PHPMailer-master/src/Exception.php';
 require 'PHPMailer-master/PHPMailer-master/src/PHPMailer.php';
-require 'path/to/PHPMailer/src/SMTP.php';
+require 'PHPMailer-master/PHPMailer-master/src/SMTP.php';
 
 // Überprüfen, ob das Formular übermittelt wurde
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
