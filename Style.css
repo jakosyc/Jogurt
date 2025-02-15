@@ -126,13 +126,14 @@ header h1 {
 }
 
 label {
-    font-family: terminal grotesque, sans-serif; /* Arial Schriftart */
-    font-weight: normal; /* Kein fetter Text */
-    font-size: 1rem; /* Standard-Schriftgröße */
-    color: black; /* Weißer Text */
-    filter: blur(0.3px); /* Teletext-ähnlicher Verschwommeneffekt */
-    text-shadow: 3px 3px 5px black; /* Schwarzer Schatten */
-    padding: 10px; /* Innerer Abstand */
+     font-size: 1.8rem;
+    font-family: 'terminal grotesque', Verdana; /* Name der Schriftart */
+    font-weight: bold; /* Arial Bold */
+    color: yellow; /* Weiße Schrift */
+    margin: 20px 0;
+    position: relative;
+    letter-spacing: 2px; /* Verpixelter Look */
+    text-align: center; /* Zentrierte Liste */
 }
 
 
