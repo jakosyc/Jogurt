@@ -178,6 +178,8 @@ main {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
+    }
+
 /* Untertitel */
 .sub-title {
     font-size:1.4rem;
@@ -236,8 +238,6 @@ main {
     margin: 20px 0; /* Abstand oben und unten */
     padding: 10px; /* Innerer Abstand */
     width: 100%; /* Breite auf den gesamten Bildschirm ausdehnen */
-}
-
 }
 
 /* Animationen */
