@@ -134,6 +134,8 @@ header h1 {
     width: 100%;
 }
 
+main {
+     
 /* Linke Hälfte für große Bilder */
 .left-container {
     width: 50%;
@@ -234,6 +236,8 @@ header h1 {
     margin: 20px 0; /* Abstand oben und unten */
     padding: 10px; /* Innerer Abstand */
     width: 100%; /* Breite auf den gesamten Bildschirm ausdehnen */
+}
+
 }
 
 /* Animationen */
