@@ -125,6 +125,17 @@ header h1 {
     transition: transform 0.2s ease-in-out; /* Animation bei Hover */
 }
 
+label {
+    font-family: terminal grotesque, sans-serif; /* Arial Schriftart */
+    font-weight: normal; /* Kein fetter Text */
+    font-size: 1rem; /* Standard-Schriftgröße */
+    color: black; /* Weißer Text */
+    filter: blur(1px); /* Teletext-ähnlicher Verschwommeneffekt */
+    text-shadow: 3px 3px 5px black; /* Schwarzer Schatten */
+    padding: 10px; /* Innerer Abstand */
+}
+
+
 /* Standard-Styling der Liste */
 #editable-list li {
     margin: 20px 0;
