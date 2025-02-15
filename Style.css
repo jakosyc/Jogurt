@@ -62,7 +62,7 @@ body {
 
 .gif {
     position: fixed; /* Fixiert den Kreis in der Ecke */
-    top: 170px; /* Abstand vom oberen Rand */
+    top: 200px; /* Abstand vom oberen Rand */
     left: 30px; /* Abstand vom rechten Rand */
     filter: blur(0.2px); /* Teletext-ähnlicher Verschwommeneffekt */
     z-index: 999; /* Überlagert andere Inhalte */
