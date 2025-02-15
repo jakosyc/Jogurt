@@ -1,6 +1,6 @@
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $empfaenger = "deine-email@example.com";  // Ersetze mit deiner echten E-Mail-Adresse
+    $empfaenger = "jakobsycha@gmail.com";  // Ersetze mit deiner echten E-Mail-Adresse
     $betreff = "Neue Nachricht vom Kontaktformular";
     
     $name = $_POST["name"];
