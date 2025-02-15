@@ -17,7 +17,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $nachricht .= "Nachricht:\n" . $message . "\n";
 
     // E-Mail senden
-    if (mail($empfaenger, $betreff, $nachricht, $headers)) {
+    if (mail("jakobsycha@gmail.com, $betreff, $nachricht, $headers)) {
         echo "Deine Nachricht wurde gesendet!";
     } else {
         echo "Fehler beim Senden der Nachricht.";
