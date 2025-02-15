@@ -130,7 +130,7 @@ label {
     font-weight: normal; /* Kein fetter Text */
     font-size: 1rem; /* Standard-Schriftgröße */
     color: black; /* Weißer Text */
-    filter: blur(1px); /* Teletext-ähnlicher Verschwommeneffekt */
+    filter: blur(0.3px); /* Teletext-ähnlicher Verschwommeneffekt */
     text-shadow: 3px 3px 5px black; /* Schwarzer Schatten */
     padding: 10px; /* Innerer Abstand */
 }
