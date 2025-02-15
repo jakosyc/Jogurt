@@ -71,8 +71,8 @@ body {
 
   .biene {
         position: fixed; /* Fixiert den Kreis in der Ecke */
-        width: 80px; /* Größe des kleinen Bildes */
-        height: 80px;
+        width: 40px; /* Größe des kleinen Bildes */
+        height: 40px;
         top: 200px; /* Abstand vom oberen Rand */
         left: 20px; /* Abstand vom rechten Rand */
         filter: blur(0.2px); /* Teletext-ähnlicher Verschwommeneffekt */
