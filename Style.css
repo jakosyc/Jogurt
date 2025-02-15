@@ -182,7 +182,7 @@ main {
     font-size: 1.8rem;
     font-family: 'terminal grotesque', Verdana; /* Name der Schriftart */
     font-weight: bold; /* Arial Bold */
-    color: white; /* Weiße Schrift */
+    color: black; /* Weiße Schrift */
     margin: 20px 0;
     position: relative;
     letter-spacing: 2px; /* Verpixelter Look */
