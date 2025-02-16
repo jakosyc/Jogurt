@@ -85,7 +85,7 @@ body {
 }
 
 header {
-    padding: 20px;
+    padding: 10px;
     display: flex;
     align-items: center; /* Inhalte horizontal zentrieren */
     justify-content: center;
