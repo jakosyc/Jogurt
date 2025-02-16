@@ -80,6 +80,13 @@ body {
       
         }
 
+.smoke {
+    position: relative;
+    down: 10px; /* Abstand vom oberen Rand */
+    left: 30px; /* Abstand vom rechten Rand */
+    filter: blur(0.2px); /* Teletext-ähnlicher Verschwommeneffekt */
+    z-index: 999; /* Überlagert andere Inhalte */
+
 .circle:hover {
     background-color: #f0f0f0; /* Hellerer Hintergrund bei Hover */
 }
