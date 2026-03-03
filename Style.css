@@ -130,7 +130,7 @@ header h1 {
     display: inline-block;
     padding: 15px 25px;
     text-align: center;
-    background: linear-gradient(to right, white 65%, rgb(255, 69, 0) 100%); 
+    background: linear-gradient(to right, white 65%, yellow 100%); 
 }
 
 .share-icon {
@@ -367,7 +367,7 @@ main {
     font-style: normal;  /* Optional: Stil der Schriftart */
 }
 
-@media (max-width: 700px) {
+@media (max-width: 750px) {
        }  
     
     header {
