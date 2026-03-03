@@ -127,7 +127,6 @@ header h1 {
 .oval-title {
     border: 5px solid black; /* Schwarzes Oval */
     border-radius: 50%; /* Ovalform */
-    display: inline-block;
     padding: 30px 50px;
     text-align: center;
     background: linear-gradient(to right, white 65%, rgb(55, 16, 242) 100%); 
