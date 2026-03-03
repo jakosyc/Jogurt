@@ -73,7 +73,7 @@ body {
         position: fixed; /* Fixiert den Kreis in der Ecke */
         width: 40px; /* Größe des kleinen Bildes */
         height: 40px;
-        top: 200px; /* Abstand vom oberen Rand */
+        top: 20px; /* Abstand vom oberen Rand */
         left: 20px; /* Abstand vom rechten Rand */
         filter: blur(0.2px); /* Teletext-ähnlicher Verschwommeneffekt */
         z-index: 999; /* Überlagert andere Inhalte */
@@ -367,7 +367,7 @@ main {
     font-style: normal;  /* Optional: Stil der Schriftart */
 }
 
-@media (max-width: 750px) {
+@media (max-width: 700px) {
        }  
     
     header {
