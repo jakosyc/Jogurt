@@ -128,7 +128,7 @@ header h1 {
     border: 5px solid black; /* Schwarzes Oval */
     border-radius: 50%; /* Ovalform */
     display: inline-block;
-    padding: 15px 25px;
+    padding: 5px 5x;
     text-align: center;
     background: linear-gradient(to right, white 65%, yellow 100%); 
 }
